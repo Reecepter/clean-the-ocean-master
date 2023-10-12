@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,10 +10,18 @@ public class ShootScript : MonoBehaviour
     GameObject ProjectileSpawnPoint;
     [SerializeField]
     GameObject Projectile;
+    public InputActionReference triggerInputActionRefence;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        //this.GetComponent<PlayerInput>().
+        triggerInputActionRefence.action.performed += OnFire;
+    }
+
+    private void OnFire(InputAction.CallbackContext context)
+    {
+        GameObject shot;
+        shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
+        Destroy(shot, 2.0f);
     }
 
     // Update is called once per frame
@@ -20,10 +29,10 @@ public class ShootScript : MonoBehaviour
     {
         
     }
-    public void OnSelect()
-    {
-        GameObject shot;
-        shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
-        Destroy(shot, 2.0f);
-    }
+    //private void OnFire()
+    //{
+    //    GameObject shot;
+    //    shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
+    //    Destroy(shot, 2.0f);
+    //}
 }
