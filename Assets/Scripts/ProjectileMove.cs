@@ -19,4 +19,17 @@ public class ProjectileMove : MonoBehaviour
     {
         rb.velocity = this.transform.forward * speed;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Barrel") == true)
+        {
+            collision.gameObject.SetActive(false);
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 }

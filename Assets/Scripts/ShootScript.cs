@@ -10,6 +10,7 @@ public class ShootScript : MonoBehaviour
     GameObject ProjectileSpawnPoint;
     [SerializeField]
     GameObject Projectile;
+
     public InputActionReference triggerInputActionRefence;
     // Start is called before the first frame update
     void Awake()
@@ -35,4 +36,5 @@ public class ShootScript : MonoBehaviour
     //    shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
     //    Destroy(shot, 2.0f);
     //}
+   
 }
