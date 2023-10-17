@@ -1259,6 +1259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7865921711487000416}
+  - component: {fileID: 8109414990398349835}
   m_Layer: 0
   m_Name: Area2 Unhealthy
   m_TagString: Untagged
@@ -1291,6 +1292,27 @@ Transform:
   - {fileID: 8312538175998716827}
   m_Father: {fileID: 415772820224296926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8109414990398349835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110719640724837075}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 5.2475457, y: 5.23208, z: 13.906411}
+  m_Center: {x: 23.070387, y: 3.2742584, z: 2.161795}
 --- !u!1 &3180252432496861143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69250032845990867}
+  - component: {fileID: 3150381751990363891}
   m_Layer: 0
   m_Name: Area3 Unhealthy
   m_TagString: Untagged
@@ -1604,6 +1627,27 @@ Transform:
   - {fileID: 4291372213215461591}
   m_Father: {fileID: 415772820224296926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3150381751990363891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901335286300703690}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 3.9592357, y: 3.0483403, z: 4.395909}
+  m_Center: {x: 13.269642, y: 3.0841749, z: 4.2779603}
 --- !u!1 &4238559236878580513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,6 +1957,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1787678518888554468}
   - {fileID: 1552781137035078568}
   - {fileID: 6132435525235007697}
   - {fileID: 2438341226092466800}
@@ -4276,6 +4321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1903538404992441679}
+  - component: {fileID: 6855974440144963456}
   m_Layer: 0
   m_Name: Area1Unhealthy
   m_TagString: Untagged
@@ -4315,6 +4361,27 @@ Transform:
   - {fileID: 6161005110860124997}
   m_Father: {fileID: 415772820224296926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6855974440144963456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8838626519388909348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.525256, y: 4.9677625, z: 12.657682}
+  m_Center: {x: -2.469776, y: 4.083887, z: 15.853261}
 --- !u!1 &9132858696042450324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,6 +4608,10 @@ PrefabInstance:
     - target: {fileID: 75930116885271925, guid: f39140417164420469e83ee2e413c5b6, type: 3}
       propertyPath: m_Name
       value: Coral_15_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 75930116885271925, guid: f39140417164420469e83ee2e413c5b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 617757813610411817, guid: f39140417164420469e83ee2e413c5b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -4902,6 +4973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8216906330377910704, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -5005,6 +5080,10 @@ PrefabInstance:
     - target: {fileID: 5769416994153030050, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
       propertyPath: m_Name
       value: Coral_3_G12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769416994153030050, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8485714314534486818, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
       propertyPath: m_LocalScale.x
@@ -5136,6 +5215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5231,6 +5314,10 @@ PrefabInstance:
     - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_Name
       value: Coral_14_G4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4028984812006846319, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5362,6 +5449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G2 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6587368093871027432, guid: 8268c95e59621f443b6888cb3ab0c762, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5461,6 +5552,10 @@ PrefabInstance:
     - target: {fileID: 4430687895515725461, guid: e8a9568e68dfaa7468794e59d6c4c271, type: 3}
       propertyPath: m_Name
       value: Coral_6_Sphere_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430687895515725461, guid: e8a9568e68dfaa7468794e59d6c4c271, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6085379098369978392, guid: e8a9568e68dfaa7468794e59d6c4c271, type: 3}
       propertyPath: m_LocalScale.x
@@ -5588,6 +5683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_Branch_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7834414422441910522, guid: adcf3bd79b7e18a478bfa8fa2e54dd84, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5662,6 +5761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5683,6 +5786,10 @@ PrefabInstance:
     - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_Name
       value: Coral3_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2075298065318328115, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_LocalScale.x
@@ -5809,6 +5916,10 @@ PrefabInstance:
     - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
       propertyPath: m_Name
       value: Shell4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6036,6 +6147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 2403211824106240507, guid: a200a34d20218da46a3452870af14a41, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4135288958326431674, guid: a200a34d20218da46a3452870af14a41, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6061,6 +6176,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -6218,6 +6337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral2_Sheet3
       objectReference: {fileID: 0}
+    - target: {fileID: 5781755216859102599, guid: bad7e2ef9d7bb6c4ea80a367cc9642a0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6366,6 +6489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G1
       objectReference: {fileID: 0}
+    - target: {fileID: 8381983460717500792, guid: 16c89c1c45349414cbb2dcc0af742e0e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6465,6 +6592,10 @@ PrefabInstance:
     - target: {fileID: 75930116885271925, guid: f39140417164420469e83ee2e413c5b6, type: 3}
       propertyPath: m_Name
       value: Coral_15_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 75930116885271925, guid: f39140417164420469e83ee2e413c5b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 617757813610411817, guid: f39140417164420469e83ee2e413c5b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -6826,6 +6957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6921,6 +7056,10 @@ PrefabInstance:
     - target: {fileID: 2513043844074863786, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
       propertyPath: m_Name
       value: Coral5_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513043844074863786, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7194492405036290565, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
       propertyPath: m_LocalScale.x
@@ -7048,6 +7187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral10_G2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506123578522587980, guid: 4a3a7346bcbfc37479de3adde84f5f54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7069,6 +7212,10 @@ PrefabInstance:
     - target: {fileID: 1739003503195884, guid: 76c1dbd514b93e348838e6be03539125, type: 3}
       propertyPath: m_Name
       value: Sea_urchin_v1_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739003503195884, guid: 76c1dbd514b93e348838e6be03539125, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4751956655705118, guid: 76c1dbd514b93e348838e6be03539125, type: 3}
       propertyPath: m_LocalScale.x
@@ -7195,6 +7342,10 @@ PrefabInstance:
     - target: {fileID: 4633122274526436608, guid: c0b9a1469dda0064ca5f14839d367290, type: 3}
       propertyPath: m_Name
       value: Coral_6_Sphere_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633122274526436608, guid: c0b9a1469dda0064ca5f14839d367290, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7348,6 +7499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shell1
       objectReference: {fileID: 0}
+    - target: {fileID: 8467145057038019208, guid: 3a806bf4719241546999f3fecc6e3515, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7426,6 +7581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G2 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6587368093871027432, guid: 8268c95e59621f443b6888cb3ab0c762, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7500,6 +7659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7521,6 +7684,10 @@ PrefabInstance:
     - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_Name
       value: Coral_14_G4
+      objectReference: {fileID: 0}
+    - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4488421163463613159, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -7722,6 +7889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral10_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 8506123578522587980, guid: 4a3a7346bcbfc37479de3adde84f5f54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7743,6 +7914,10 @@ PrefabInstance:
     - target: {fileID: 1703811145780243172, guid: ff2b85434787edb44ab884113c702aad, type: 3}
       propertyPath: m_Name
       value: Coral4_Branch_G3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703811145780243172, guid: ff2b85434787edb44ab884113c702aad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4960644083167394256, guid: ff2b85434787edb44ab884113c702aad, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7822,6 +7997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_13_3
       objectReference: {fileID: 0}
+    - target: {fileID: 5167924592830502413, guid: 9e8e2c9fc35dfb54ab0b1009b92e2c9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8431490578255978307, guid: 9e8e2c9fc35dfb54ab0b1009b92e2c9b, type: 3}
       propertyPath: m_LocalScale.x
       value: 8.701796
@@ -7895,6 +8074,10 @@ PrefabInstance:
     - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1077826784497964119, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -8031,6 +8214,128 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7671807201009491959, guid: 6dd8fd30ada954048b6f4129f17d0648, type: 3}
   m_PrefabInstance: {fileID: 1780009034739010583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1783651587040642438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1490344724473816088}
+    m_Modifications:
+    - target: {fileID: 1739802490283200, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_Name
+      value: Octopus_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9799
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.9799
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.9799
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.086899
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.866
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.582744
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.25059718
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6900729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.29496977
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6115499
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 44.962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -259.708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 188.173
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1739802490283200, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1642695737671154556}
+  m_SourcePrefab: {fileID: 100100000, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+--- !u!1 &1785364974944067910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1739802490283200, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+  m_PrefabInstance: {fileID: 1783651587040642438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1642695737671154556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785364974944067910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2d9078dbe17bc4f966c9d2310be047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathContainer: {fileID: 0}
+  onStart: 1
+  moveToPath: 0
+  reverse: 0
+  startPoint: 0
+  currentPoint: 0
+  closeLoop: 0
+  localType: 0
+  lookAhead: 0
+  sizeToAdd: 0
+  timeValue: 1
+  speed: 0.4
+  animEaseType:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loopType: 0
+  waypoints: []
+  events: []
+  pathType: 1
+  pathMode: 1
+  easeType: 1
+  lockPosition: 0
+  lockRotation: 22
+  waypointRotation: 0
+  rotationTarget: {fileID: 0}
+--- !u!4 &1787678518888554468 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4452537338714722, guid: 4a51b6b5114fb584d869e5bb7f99d736, type: 3}
+  m_PrefabInstance: {fileID: 1783651587040642438}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1835811521370587755
 PrefabInstance:
@@ -8174,6 +8479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Echinus_shell
       objectReference: {fileID: 0}
+    - target: {fileID: 3305901325677756465, guid: c557f6df208f83b498e2f7bc0dc2ebcf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8257,6 +8566,10 @@ PrefabInstance:
     - target: {fileID: 7931937598455067043, guid: 8788c2374412ce846971d3ed141ff465, type: 3}
       propertyPath: m_Name
       value: Coral3_G1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931937598455067043, guid: 8788c2374412ce846971d3ed141ff465, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7979571029530280174, guid: 8788c2374412ce846971d3ed141ff465, type: 3}
       propertyPath: m_LocalScale.x
@@ -8406,6 +8719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_Bowl_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3280342750781175141, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -8554,6 +8871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock2
       objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -8627,6 +8948,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -8927,6 +9252,10 @@ PrefabInstance:
     - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3280342750781175141, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_LocalScale.x
@@ -9440,6 +9769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralTussocks_2_tentacles787
       objectReference: {fileID: 0}
+    - target: {fileID: 4180787018895081280, guid: 0345a2c9f4e60c1458bb52f2ee4006f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9514,6 +9847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9535,6 +9872,10 @@ PrefabInstance:
     - target: {fileID: 3996789359973866, guid: 7b931fe1d0dab6544a79951a00ed1165, type: 3}
       propertyPath: m_Name
       value: CoralTussocks_2_tentacles061
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996789359973866, guid: 7b931fe1d0dab6544a79951a00ed1165, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4705105877276261282, guid: 7b931fe1d0dab6544a79951a00ed1165, type: 3}
       propertyPath: m_LocalScale.x
@@ -9683,6 +10024,10 @@ PrefabInstance:
     - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_Name
       value: Coral_16_G3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8165994426194127992, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_LocalScale.x
@@ -9914,6 +10259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_16_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 6646887884624705411, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9991,6 +10340,10 @@ PrefabInstance:
     - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_Name
       value: Coral3_G1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2075298065318328115, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_LocalScale.x
@@ -10118,6 +10471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_16_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 2249940632272109752, guid: b6990f209b3a5664ca784de7a618ea43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10191,6 +10548,10 @@ PrefabInstance:
     - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
       propertyPath: m_Name
       value: CoralRock4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10296,6 +10657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3576914450648649390, guid: 2a737baa55eaeaa448bbb1934ab41a65, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10370,6 +10735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3576914450648649390, guid: 2a737baa55eaeaa448bbb1934ab41a65, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10391,6 +10760,10 @@ PrefabInstance:
     - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_Name
       value: Coral3_G1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1880264496427306738, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_LocalScale.x
@@ -10556,6 +10929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral2_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4450222447816741022, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851871
@@ -10686,6 +11063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 6282657092286444489, guid: 9fa1909324de3c842a15502e3644b6fa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10785,6 +11166,10 @@ PrefabInstance:
     - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_Name
       value: Coral2_Sheet1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7751874005517127377, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11142,6 +11527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11163,6 +11552,10 @@ PrefabInstance:
     - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_Name
       value: CoralRock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
@@ -11320,6 +11713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11341,6 +11738,10 @@ PrefabInstance:
     - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1077826784497964119, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -11419,6 +11820,10 @@ PrefabInstance:
     - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_Name
       value: CoralRock2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
@@ -11546,6 +11951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G1
       objectReference: {fileID: 0}
+    - target: {fileID: 7228890051312980225, guid: 20cc5fc96140f0a4eaf36d716aabfbc2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11567,6 +11976,10 @@ PrefabInstance:
     - target: {fileID: 2267523410559986501, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
       propertyPath: m_Name
       value: CoralTussocks3_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267523410559986501, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8934037540813274485, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
       propertyPath: m_LocalScale.x
@@ -11693,6 +12106,10 @@ PrefabInstance:
     - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
       propertyPath: m_Name
       value: Coral_15_G3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11842,6 +12259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral3_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 5634528383004221239, guid: 173732f6c490e594f98358edf6a19d88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11938,6 +12359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_Branch_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 1703811145780243172, guid: ff2b85434787edb44ab884113c702aad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5136086362159630994, guid: ff2b85434787edb44ab884113c702aad, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8142161
@@ -12011,6 +12436,10 @@ PrefabInstance:
     - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3280342750781175141, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_LocalScale.x
@@ -12089,6 +12518,10 @@ PrefabInstance:
     - target: {fileID: 6159611840884861838, guid: f4c704570c5904747b8700601535a438, type: 3}
       propertyPath: m_Name
       value: CoralTussocks1_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159611840884861838, guid: f4c704570c5904747b8700601535a438, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7348452160668030480, guid: f4c704570c5904747b8700601535a438, type: 3}
       propertyPath: m_LocalScale.x
@@ -12216,6 +12649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8216906330377910704, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12241,6 +12678,10 @@ PrefabInstance:
     - target: {fileID: 8221656711783016219, guid: 959376aca337ede45ab2ef3dcc86703b, type: 3}
       propertyPath: m_Name
       value: Coral9_G3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8221656711783016219, guid: 959376aca337ede45ab2ef3dcc86703b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9080905312432774491, guid: 959376aca337ede45ab2ef3dcc86703b, type: 3}
       propertyPath: m_LocalScale.x
@@ -12468,6 +12909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 3713810698078273700, guid: 64fe21389a6b6aa459aa5ea3979742f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3785446862021612393, guid: 64fe21389a6b6aa459aa5ea3979742f4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12672,6 +13117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12693,6 +13142,10 @@ PrefabInstance:
     - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_Name
       value: CoralRock2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
@@ -12768,6 +13221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 2536542534375368944, guid: 94f8e66ece8ba4547b7cead5cbe68102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7624067629369366921, guid: 94f8e66ece8ba4547b7cead5cbe68102, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -12842,6 +13299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_G1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2587086836668555763, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.1306565
@@ -12915,6 +13376,10 @@ PrefabInstance:
     - target: {fileID: 2513043844074863786, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
       propertyPath: m_Name
       value: Coral5_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513043844074863786, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7194492405036290565, guid: 2571d86f83e89d34bb5428c8289ce4ef, type: 3}
       propertyPath: m_LocalScale.x
@@ -13374,6 +13839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 2403211824106240507, guid: a200a34d20218da46a3452870af14a41, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13522,6 +13991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 3576914450648649390, guid: 2a737baa55eaeaa448bbb1934ab41a65, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13543,6 +14016,10 @@ PrefabInstance:
     - target: {fileID: 5769416994153030050, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
       propertyPath: m_Name
       value: Coral_3_G12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769416994153030050, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8485714314534486818, guid: 5e6651cd7acd36644bd1d05cfeff8d83, type: 3}
       propertyPath: m_LocalScale.x
@@ -13617,6 +14094,10 @@ PrefabInstance:
     - target: {fileID: 1301355432674718, guid: 2208d35a7562c9041a5632ac3c655467, type: 3}
       propertyPath: m_Name
       value: Sea_urchin_v2_prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301355432674718, guid: 2208d35a7562c9041a5632ac3c655467, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4862552265438640, guid: 2208d35a7562c9041a5632ac3c655467, type: 3}
       propertyPath: m_LocalScale.x
@@ -13744,6 +14225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral1_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 3576914450648649390, guid: 2a737baa55eaeaa448bbb1934ab41a65, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13827,6 +14312,10 @@ PrefabInstance:
     - target: {fileID: 932339936393369634, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
       propertyPath: m_Name
       value: Coral4_G3
+      objectReference: {fileID: 0}
+    - target: {fileID: 932339936393369634, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2486990240903620294, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
       propertyPath: m_LocalScale.x
@@ -13980,6 +14469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_16_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8165994426194127992, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.370483
@@ -14105,6 +14598,10 @@ PrefabInstance:
     - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
       propertyPath: m_Name
       value: Shell4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14253,6 +14750,10 @@ PrefabInstance:
     - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
       propertyPath: m_Name
       value: Shell4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14480,6 +14981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14625,6 +15130,10 @@ PrefabInstance:
     - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_Name
       value: Coral2_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4450222447816741022, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_LocalScale.x
@@ -14946,6 +15455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_3
       objectReference: {fileID: 0}
+    - target: {fileID: 5251674337667691212, guid: f76606c01d38b9141ad4ea63e3e4a383, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7234898197251590479, guid: f76606c01d38b9141ad4ea63e3e4a383, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -15019,6 +15532,10 @@ PrefabInstance:
     - target: {fileID: 200180201516185969, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
       propertyPath: m_Name
       value: Coral5_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 200180201516185969, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 241119024670942025, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
       propertyPath: m_LocalScale.x
@@ -15150,6 +15667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15171,6 +15692,10 @@ PrefabInstance:
     - target: {fileID: 2547397352761259311, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
       propertyPath: m_Name
       value: Coral8_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547397352761259311, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7473772326685292071, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
       propertyPath: m_LocalScale.x
@@ -15298,6 +15823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15319,6 +15848,10 @@ PrefabInstance:
     - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 92679698196635557, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1077826784497964119, guid: 8fb29e6e0f56d0f46b1c2e6faf83c7e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -15445,6 +15978,10 @@ PrefabInstance:
     - target: {fileID: 6587368093871027432, guid: 8268c95e59621f443b6888cb3ab0c762, type: 3}
       propertyPath: m_Name
       value: Coral1_G2 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587368093871027432, guid: 8268c95e59621f443b6888cb3ab0c762, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15628,6 +16165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.4159522
@@ -15754,6 +16295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral7_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 4036660199984835823, guid: c4010b01313af444a99f07bef1ef217b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15853,6 +16398,10 @@ PrefabInstance:
     - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_Name
       value: CoralRock2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
@@ -16051,6 +16600,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -16282,6 +16835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_16_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 2249940632272109752, guid: b6990f209b3a5664ca784de7a618ea43, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16303,6 +16860,10 @@ PrefabInstance:
     - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_Name
       value: Coral_16_G3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744374624888244402, guid: 684871921d966f14e873d74143575094, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8165994426194127992, guid: 684871921d966f14e873d74143575094, type: 3}
       propertyPath: m_LocalScale.x
@@ -16430,6 +16991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16503,6 +17068,10 @@ PrefabInstance:
     - target: {fileID: 8381983460717500792, guid: 16c89c1c45349414cbb2dcc0af742e0e, type: 3}
       propertyPath: m_Name
       value: Coral_3_G1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381983460717500792, guid: 16c89c1c45349414cbb2dcc0af742e0e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16668,6 +17237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8381983460717500792, guid: 16c89c1c45349414cbb2dcc0af742e0e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16741,6 +17314,10 @@ PrefabInstance:
     - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
       propertyPath: m_Name
       value: Shell4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16816,6 +17393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock1
       objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16837,6 +17418,10 @@ PrefabInstance:
     - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_Name
       value: Coral_14_G4
+      objectReference: {fileID: 0}
+    - target: {fileID: 241665909766531472, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4488421163463613159, guid: e76e0b6ce6504ca49a7a90cf90cb2c6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -17112,6 +17697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralTussocks_2_tentacles787
       objectReference: {fileID: 0}
+    - target: {fileID: 4180787018895081280, guid: 0345a2c9f4e60c1458bb52f2ee4006f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17282,6 +17871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_Branch_2
       objectReference: {fileID: 0}
+    - target: {fileID: 4096617351872360333, guid: e422098b679da9b4b9c38ee1104e853c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4253508019042010368, guid: e422098b679da9b4b9c38ee1104e853c, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.0059683
@@ -17407,6 +18000,10 @@ PrefabInstance:
     - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
       propertyPath: m_Name
       value: CoralRock1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350237223738285262, guid: 77c65961897f3f243a21f7b7eb48fbb8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17592,7 +18189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469707410807015325, guid: d0e4aba03b160fc4b8836d00fa40e753, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.689949
+      value: 23.62
       objectReference: {fileID: 0}
     - target: {fileID: 2469707410807015325, guid: d0e4aba03b160fc4b8836d00fa40e753, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17600,7 +18197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469707410807015325, guid: d0e4aba03b160fc4b8836d00fa40e753, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5417538
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 2469707410807015325, guid: d0e4aba03b160fc4b8836d00fa40e753, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17712,6 +18309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17786,6 +18387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 7215934733167702717, guid: 71da87f15d0d4ed458a591037a245805, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17859,6 +18464,10 @@ PrefabInstance:
     - target: {fileID: 2494565633213049888, guid: 0ba7c532823575a4a859f750747ae099, type: 3}
       propertyPath: m_Name
       value: Coral7_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494565633213049888, guid: 0ba7c532823575a4a859f750747ae099, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17937,6 +18546,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8b2826e598ffea6489a9d5409090c74e, type: 3}
       propertyPath: m_Name
       value: Mesh_Crab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b2826e598ffea6489a9d5409090c74e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18125,6 +18738,10 @@ PrefabInstance:
     - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
       propertyPath: m_Name
       value: Coral_3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18344,6 +18961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral10_G2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8506123578522587980, guid: 4a3a7346bcbfc37479de3adde84f5f54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18499,6 +19120,10 @@ PrefabInstance:
     - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
       propertyPath: m_Name
       value: Coral_15_G3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18738,6 +19363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral2_Sheet3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5781755216859102599, guid: bad7e2ef9d7bb6c4ea80a367cc9642a0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18759,6 +19388,10 @@ PrefabInstance:
     - target: {fileID: 200180201516185969, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
       propertyPath: m_Name
       value: Coral5_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 200180201516185969, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 241119024670942025, guid: aa81bf3760cb93846b140c7fb00007a0, type: 3}
       propertyPath: m_LocalScale.x
@@ -19056,6 +19689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6465384530606534453, guid: 9c225246225e9904682ca7b8e8d35c32, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7824907284314645786, guid: 9c225246225e9904682ca7b8e8d35c32, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851874
@@ -19181,6 +19818,10 @@ PrefabInstance:
     - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
       propertyPath: m_Name
       value: Coral_15_G3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19338,6 +19979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral3_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 5945941097918675749, guid: 68b5ec59e15173b4d80be68008aa32ad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19359,6 +20004,10 @@ PrefabInstance:
     - target: {fileID: 2892512516627920031, guid: ef10892f339bcef458ec1d750e356b09, type: 3}
       propertyPath: m_Name
       value: Coral_15_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2892512516627920031, guid: ef10892f339bcef458ec1d750e356b09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3061089976779069751, guid: ef10892f339bcef458ec1d750e356b09, type: 3}
       propertyPath: m_LocalScale.x
@@ -19490,6 +20139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19564,6 +20217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19615,6 +20272,10 @@ PrefabInstance:
     - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_Name
       value: Coral3_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1880264496427306738, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_LocalScale.x
@@ -19693,6 +20354,10 @@ PrefabInstance:
     - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_Name
       value: Coral2_G2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4450222447816741022, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_LocalScale.x
@@ -19846,6 +20511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral2_Sheet1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 9036992341216993341, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -19975,6 +20644,10 @@ PrefabInstance:
     - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
       propertyPath: m_Name
       value: Coral_15_G3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20133,6 +20806,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -20308,6 +20985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_Branch_G1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3948837286744813951, guid: 3594e55ea3b78524fa7036f0b9bce26a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8977035318654446799, guid: 3594e55ea3b78524fa7036f0b9bce26a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7034379
@@ -20381,6 +21062,10 @@ PrefabInstance:
     - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_Name
       value: Coral4_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2587086836668555763, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_LocalScale.x
@@ -20508,6 +21193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock4
       objectReference: {fileID: 0}
+    - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20559,6 +21248,10 @@ PrefabInstance:
     - target: {fileID: 3948837286744813951, guid: 3594e55ea3b78524fa7036f0b9bce26a, type: 3}
       propertyPath: m_Name
       value: Coral4_Branch_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948837286744813951, guid: 3594e55ea3b78524fa7036f0b9bce26a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8977035318654446799, guid: 3594e55ea3b78524fa7036f0b9bce26a, type: 3}
       propertyPath: m_LocalScale.x
@@ -20790,6 +21483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3225579276043361808, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8830422438114895661, guid: 81f8548a3f2fd6048aa39fe3a92f1f4a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.4159522
@@ -20864,6 +21561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralTussocks3_G1
       objectReference: {fileID: 0}
+    - target: {fileID: 2267523410559986501, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8934037540813274485, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.4472055
@@ -20937,6 +21638,10 @@ PrefabInstance:
     - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_Name
       value: Coral1_Bowl_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698366454792150975, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3280342750781175141, guid: 8f367bf332f38dd41bd06361760cfba9, type: 3}
       propertyPath: m_LocalScale.x
@@ -21064,6 +21769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shell4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21085,6 +21794,10 @@ PrefabInstance:
     - target: {fileID: 3487287370385550761, guid: 274ace7141333624e9276c964f360888, type: 3}
       propertyPath: m_Name
       value: CoralTussocks_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487287370385550761, guid: 274ace7141333624e9276c964f360888, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5898779366815869648, guid: 274ace7141333624e9276c964f360888, type: 3}
       propertyPath: m_LocalScale.x
@@ -21159,6 +21872,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -21264,6 +21981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_13_G4
       objectReference: {fileID: 0}
+    - target: {fileID: 376005756813264513, guid: 60df09d2faf5b414aaf0b6ebd80f6b59, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4600566773307343333, guid: 60df09d2faf5b414aaf0b6ebd80f6b59, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.284211
@@ -21338,6 +22059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6465384530606534453, guid: 9c225246225e9904682ca7b8e8d35c32, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7824907284314645786, guid: 9c225246225e9904682ca7b8e8d35c32, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851873
@@ -21411,6 +22136,10 @@ PrefabInstance:
     - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_Name
       value: Coral3_G1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1880264496427306738, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_LocalScale.x
@@ -21542,6 +22271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_3_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21563,6 +22296,10 @@ PrefabInstance:
     - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_Name
       value: Coral4_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2587086836668555763, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_LocalScale.x
@@ -21699,6 +22436,10 @@ PrefabInstance:
     - target: {fileID: 2335923369853579325, guid: f11ee8da065ee4b4c82ab85af7312576, type: 3}
       propertyPath: m_Name
       value: Coral10_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2335923369853579325, guid: f11ee8da065ee4b4c82ab85af7312576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3850333595999253222, guid: f11ee8da065ee4b4c82ab85af7312576, type: 3}
       propertyPath: m_LocalScale.x
@@ -21852,6 +22593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2892512516627920031, guid: ef10892f339bcef458ec1d750e356b09, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3061089976779069751, guid: ef10892f339bcef458ec1d750e356b09, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -21982,6 +22727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral3_G2
       objectReference: {fileID: 0}
+    - target: {fileID: 5634528383004221239, guid: 173732f6c490e594f98358edf6a19d88, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22003,6 +22752,10 @@ PrefabInstance:
     - target: {fileID: 932339936393369634, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
       propertyPath: m_Name
       value: Coral4_G3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 932339936393369634, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2486990240903620294, guid: a3fecab30b6dc5445ae20e5868dde991, type: 3}
       propertyPath: m_LocalScale.x
@@ -22324,6 +23077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral2_Sheet1
       objectReference: {fileID: 0}
+    - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7751874005517127377, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -22531,6 +23288,10 @@ PrefabInstance:
     - target: {fileID: 7355303958156049602, guid: a2ee32a8e85cba64b9d58ce3699383ae, type: 3}
       propertyPath: m_Name
       value: CoralTussocks_2_tentacles1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7355303958156049602, guid: a2ee32a8e85cba64b9d58ce3699383ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22856,6 +23617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralRock4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8557261617792117302, guid: 5e1c7847fbdfc7e40a27ab914170ec9d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22911,6 +23676,10 @@ PrefabInstance:
     - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_Name
       value: Coral2_G2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967660932843878706, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4450222447816741022, guid: 3f3b5642592aca242983bad8999303d7, type: 3}
       propertyPath: m_LocalScale.x
@@ -23037,6 +23806,10 @@ PrefabInstance:
     - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
       propertyPath: m_Name
       value: Coral_3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841716980271897307, guid: 00a6e6d0de0495949b25add9eb7d081a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23276,6 +24049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G1
       objectReference: {fileID: 0}
+    - target: {fileID: 7228890051312980225, guid: 20cc5fc96140f0a4eaf36d716aabfbc2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23350,6 +24127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shell4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8322831168785928318, guid: 240e13d7b165741478879da07290f388, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23371,6 +24152,10 @@ PrefabInstance:
     - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_Name
       value: CoralRock3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686195598507482991, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4251542814793006541, guid: bdcea7a1f5b31c64fa918adc37080cf8, type: 3}
       propertyPath: m_LocalScale.x
@@ -23578,6 +24363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral3_G1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1197568593856632544, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1880264496427306738, guid: 43cfc8998f0c5e44e995a40fef8a574b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851873
@@ -23704,6 +24493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_15_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 6324825079085631019, guid: 712ab6030e0793744886808f575ed92b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23800,6 +24593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral4_Branch_G3
       objectReference: {fileID: 0}
+    - target: {fileID: 1703811145780243172, guid: ff2b85434787edb44ab884113c702aad, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5136086362159630994, guid: ff2b85434787edb44ab884113c702aad, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -23873,6 +24670,10 @@ PrefabInstance:
     - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_Name
       value: Coral4_G1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091541961204753, guid: b4712b9d024365843ac3729eaf448432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2587086836668555763, guid: b4712b9d024365843ac3729eaf448432, type: 3}
       propertyPath: m_LocalScale.x
@@ -24000,6 +24801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoralTussocks_2_tentacles675
       objectReference: {fileID: 0}
+    - target: {fileID: 3088609253101914778, guid: 6d878805f3e19f549b65c854b02e940f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24025,6 +24830,10 @@ PrefabInstance:
     - target: {fileID: 2547397352761259311, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
       propertyPath: m_Name
       value: Coral8_G2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2547397352761259311, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7473772326685292071, guid: 8ef242b5ba777384d95be86b46ed0e23, type: 3}
       propertyPath: m_LocalScale.x
@@ -24099,6 +24908,10 @@ PrefabInstance:
     - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_Name
       value: Coral3_G1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2075298065318328115, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_LocalScale.x
@@ -24235,6 +25048,10 @@ PrefabInstance:
     - target: {fileID: 2267523410559986501, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
       propertyPath: m_Name
       value: CoralTussocks3_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2267523410559986501, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8934037540813274485, guid: e18f1b078eb38cf4cb59549f9a6ff083, type: 3}
       propertyPath: m_LocalScale.x
@@ -24401,6 +25218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral_13_G1
       objectReference: {fileID: 0}
+    - target: {fileID: 4567924406232395624, guid: 23b61a26516cfce428c241a811cdf986, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8611210927578597748, guid: 23b61a26516cfce428c241a811cdf986, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0851872
@@ -24474,6 +25295,10 @@ PrefabInstance:
     - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_Name
       value: Coral3_G1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206565157813564327, guid: f5428aea79739be40818a9882f636fbe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2075298065318328115, guid: f5428aea79739be40818a9882f636fbe, type: 3}
       propertyPath: m_LocalScale.x
@@ -24630,6 +25455,10 @@ PrefabInstance:
     - target: {fileID: 3713810698078273700, guid: 64fe21389a6b6aa459aa5ea3979742f4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713810698078273700, guid: 64fe21389a6b6aa459aa5ea3979742f4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6885692383967721035, guid: 64fe21389a6b6aa459aa5ea3979742f4, type: 3}
       propertyPath: m_LocalScale.x
@@ -24856,6 +25685,10 @@ PrefabInstance:
     - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_Name
       value: Coral2_Sheet1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448442227253825583, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9036992341216993341, guid: 7613ea7a252d62248986e9b4f100105c, type: 3}
       propertyPath: m_LocalScale.x
