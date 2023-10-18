@@ -14,12 +14,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GoGo_Trial.unity
     guid: c5dbb0cc019d16e43ba7f995e9649567
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Laboratory.unity
     guid: 0659e0c644fef7f4799b55ef021f06fa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneSetup.unity
     guid: ee33e52ca3fa1be4493b61b6c576f75a
+  - enabled: 1
+    path: Assets/Scenes/_mainScene.unity
+    guid: 12959976224c9b641baecfc5e650ebc0
+  - enabled: 1
+    path: Assets/Scenes/_mainScene_unhealthy.unity
+    guid: 09bac2696c5b1b44c9bcad1b39fe2b00
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1aa9362dcd423054fa79059a2202fb61, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 77fb367e551432147a46eb4f02ee0585, type: 2}
