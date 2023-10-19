@@ -13,7 +13,7 @@ public class ShootScript : MonoBehaviour
 
     public InputActionReference triggerInputActionRefence;
     // Start is called before the first frame update
-    void Awake()
+    void OnEnable()
     {
         triggerInputActionRefence.action.performed += OnFire;
     }
@@ -25,16 +25,9 @@ public class ShootScript : MonoBehaviour
         Destroy(shot, 2.0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
-        
+        triggerInputActionRefence.action.performed -= OnFire;
     }
-    //private void OnFire()
-    //{
-    //    GameObject shot;
-    //    shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
-    //    Destroy(shot, 2.0f);
-    //}
-   
+
 }
