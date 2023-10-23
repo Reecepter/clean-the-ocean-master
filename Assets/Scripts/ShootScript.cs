@@ -8,6 +8,8 @@ public class ShootScript : MonoBehaviour
 {
     [SerializeField]
     GameObject ProjectileSpawnPoint;
+    //[SerializeField]
+    //GameObject ProjectileSpawnPoint2;
     [SerializeField]
     GameObject Projectile;
 
@@ -23,6 +25,9 @@ public class ShootScript : MonoBehaviour
         GameObject shot;
         shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
         Destroy(shot, 2.0f);
+        //GameObject shot2;
+        //shot2 = Instantiate(Projectile, ProjectileSpawnPoint2.transform.position, ProjectileSpawnPoint.transform.rotation);
+        //Destroy(shot2, 2.0f);
     }
 
     private void OnDestroy()
