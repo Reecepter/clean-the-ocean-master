@@ -12,7 +12,7 @@ public class MoveStopStart : MonoBehaviour
     private bool pathPaused = false;
 
     // Start is called before the first frame update
-    void Awake()
+    void OnEnable()
     {
         lTriggerInputActionRefence.action.performed += PauseMovement;
     }
@@ -30,4 +30,10 @@ public class MoveStopStart : MonoBehaviour
             pathPaused = false;
         }
     }
+
+    private void OnDestroy()
+    {
+        lTriggerInputActionRefence.action.performed -= PauseMovement;
+    }
+
 }
