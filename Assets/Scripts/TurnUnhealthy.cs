@@ -19,21 +19,30 @@ public class TurnUnhealthy : MonoBehaviour
         rend = this.GetComponent<Renderer>();
 
         // At start, use the first material
-        rend.material = material1;
+        //rend.material = material1;
+        material1 = rend.material;
+        StartCoroutine(LerpMaterial());
+
     }
 
     void Update()
     {
-        if (allowTrans)
-        {
-           rend.material.Lerp(material1, material2, duration * Time.deltaTime);
-        }
+            //float lerp = Mathf.PingPong(Time.time, duration) / duration;
+            //rend.material.Lerp(material1, material2, Time.deltaTime);
         // ping-pong between the materials over the duration
     }
 
-    public void startTransition()
+    IEnumerator LerpMaterial()
     {
-        allowTrans = true;
+        float time = 0;
+        while (time < duration)
+        {
+            material1.Lerp(material1, material2, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        rend.material = material2;
     }
+
 
 }

@@ -5661,7 +5661,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1124284448}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5673,12 +5673,36 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2119918482}
         m_TargetAssemblyTypeName: SWS.splineMove, Assembly-CSharp-firstpass
         m_MethodName: StartMove
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1999833751}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1254264469}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -26378,6 +26402,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1099329033212438060, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1552781137035078568, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.089276366
@@ -28456,6 +28484,10 @@ PrefabInstance:
       objectReference: {fileID: 2025025324}
     - target: {fileID: 3110719640724837075, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988018056365734975, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4946729521402043641, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -49790,6 +49822,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 204636408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1254264469 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1099329033212438060, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1259060723 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6579924176781386667, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
@@ -67408,6 +67451,17 @@ MonoBehaviour:
   radius: 0.4
   skipCustomNames: 1
   replaceObject: {fileID: 0}
+--- !u!114 &1999833751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3988018056365734975, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2008038587
 GameObject:
   m_ObjectHideFlags: 0
