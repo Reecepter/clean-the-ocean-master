@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 719453249335951343}
   - component: {fileID: 5796358108911681033}
   - component: {fileID: 3575863245026673008}
+  - component: {fileID: 3753450360060393536}
   m_Layer: 0
   m_Name: Seaweed1_2
   m_TagString: Untagged
@@ -83,3 +84,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3753450360060393536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517479229138694856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
