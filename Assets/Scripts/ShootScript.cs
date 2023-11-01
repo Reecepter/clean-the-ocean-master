@@ -14,16 +14,21 @@ public class ShootScript : MonoBehaviour
     GameObject Projectile;
     [SerializeField]
     ParticleSystem shootParticle;
+    public AudioSource particleSound;
+
+    public GameObject reticle;
 
     public GameObject ship;
 
     List<ParticleCollisionEvent> colEvents = new List<ParticleCollisionEvent>();
 
     public InputActionReference triggerInputActionRefence;
+    bool canShoot = false;
     // Start is called before the first frame update
     void OnEnable()
     {
         triggerInputActionRefence.action.performed += OnFire;
+        reticle.SetActive(false);
     }
 
     private void OnFire(InputAction.CallbackContext context)
@@ -34,11 +39,23 @@ public class ShootScript : MonoBehaviour
         //GameObject shot2;
         //shot2 = Instantiate(Projectile, ProjectileSpawnPoint2.transform.position, ProjectileSpawnPoint.transform.rotation);
         //Destroy(shot2, 2.0f);
-        StartCoroutine(StartRecoil());
-        shootParticle.Play();
-        
+        if (canShoot == true)
+        {
+            StartCoroutine(StartRecoil());
+            shootParticle.Play();
+            particleSound.Play();
+        }
     }
-
+    public void EnableShoot()
+    {
+        canShoot = true;
+        reticle.SetActive(true);
+    }
+    public void DisableShoot()
+    {
+        canShoot = false;
+        reticle.SetActive(false);
+    }
     private void OnDestroy()
     {
         triggerInputActionRefence.action.performed -= OnFire;

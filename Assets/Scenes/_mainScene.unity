@@ -5,8 +5,8 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 4
-    smallestHole: 0.1
+    smallestOccluder: 3
+    smallestHole: 0.5
     backfaceThreshold: 100
   m_SceneGUID: 12959976224c9b641baecfc5e650ebc0
   m_OcclusionCullingData: {fileID: 36300000, guid: 42054dff23d67a64080025a27b3edae4, type: 2}
@@ -27136,7 +27136,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.214
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -49224,7 +49224,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1423464630}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49236,7 +49236,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2049941760}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49248,7 +49248,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 767907697}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49260,7 +49260,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1265411747}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49272,7 +49272,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1233636866}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49284,7 +49284,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 886907249}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49296,7 +49296,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 694539998}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49308,7 +49308,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 475590840}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49398,7 +49398,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.27
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -50072,7 +50072,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.254
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -67433,7 +67433,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.202
       inSlope: 0
       outSlope: 0
       tangentMode: 0
