@@ -5677,10 +5677,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 279099077}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 279099079}
+        m_TargetAssemblyTypeName: TransitionAnimation, Assembly-CSharp
+        m_MethodName: StartAnimation
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5699,7 +5699,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2119918482}
         m_TargetAssemblyTypeName: SWS.splineMove, Assembly-CSharp-firstpass
@@ -5715,7 +5715,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1999833751}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: StartUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5727,7 +5727,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1254264469}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: StartUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5739,7 +5739,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 694539997}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: StartUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5869,11 +5869,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &279099077 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4946729521402043641, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+--- !u!114 &279099079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3080961302438067489, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166456a4dec140b40a3d3ca60c7e8c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &292935817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32746,7 +32752,7 @@ ReflectionProbe:
   m_Enabled: 1
   serializedVersion: 2
   m_Type: 0
-  m_Mode: 1
+  m_Mode: 0
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
   m_Resolution: 128
@@ -67646,6 +67652,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.17
       objectReference: {fileID: 0}
+    - target: {fileID: 1542145453538761532, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731987664256746549, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Range
+      value: 20.217146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731987664256746549, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_SpotAngle
+      value: 83.538795
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731987664256746549, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 76.395325
+      objectReference: {fileID: 0}
     - target: {fileID: 1924040089437093537, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Range
       value: 19.127712
@@ -67704,27 +67726,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Range
-      value: 14.794009
+      value: 17.700432
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Color.b
-      value: 0.6117647
+      value: 0.2719384
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Color.g
-      value: 0.93333334
+      value: 0.883003
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Color.r
-      value: 0.911876
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Intensity
+      value: 35.8
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_SpotAngle
-      value: 143.29976
+      value: 91.880394
       objectReference: {fileID: 0}
     - target: {fileID: 3636225420573879185, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_InnerSpotAngle
-      value: 80.05635
+      value: 86.058
       objectReference: {fileID: 0}
     - target: {fileID: 3988995806962198519, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Color.b
@@ -67747,6 +67773,10 @@ PrefabInstance:
       value: 91.1398
       objectReference: {fileID: 0}
     - target: {fileID: 4192683862391359233, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Range
+      value: 25.104897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192683862391359233, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Color.b
       value: 0.81960785
       objectReference: {fileID: 0}
@@ -67760,7 +67790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192683862391359233, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Intensity
-      value: 173
+      value: 189.54
       objectReference: {fileID: 0}
     - target: {fileID: 4927683863423454232, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -67862,21 +67892,41 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 8.27
       objectReference: {fileID: 0}
+    - target: {fileID: 6694836194897318635, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Range
+      value: 12.869001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694836194897318635, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694836194897318635, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7802887
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694836194897318635, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.93333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694836194897318635, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
+      propertyPath: m_Intensity
+      value: 66.86
+      objectReference: {fileID: 0}
     - target: {fileID: 7277813709183627634, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_Name
       value: Lighting
       objectReference: {fileID: 0}
     - target: {fileID: 8123387504705630581, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.43
+      value: -24.15
       objectReference: {fileID: 0}
     - target: {fileID: 8123387504705630581, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.72
+      value: 2.65
       objectReference: {fileID: 0}
     - target: {fileID: 8123387504705630581, guid: 0a3cd0f3490fe994297147e9afa522a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.19
+      value: -4.49
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
