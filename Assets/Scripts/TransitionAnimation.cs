@@ -5,6 +5,7 @@ using UnityEngine;
 public class TransitionAnimation : MonoBehaviour
 {
     Animator anim;
+    //public AnimationClip unhealthyAnim;
     // Start is called before the first frame update
     void Start()
     {
