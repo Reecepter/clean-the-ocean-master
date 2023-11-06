@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1077826784497964119}
   - component: {fileID: 3528733318363168332}
   - component: {fileID: 7737380685318899242}
+  - component: {fileID: 3863789178742177723}
   m_Layer: 0
   m_Name: Coral1_Bowl_2
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3863789178742177723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92679698196635557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 2100000, guid: e353ac04b521fb342ba094863c8ead49, type: 2}
+  material2: {fileID: 2100000, guid: 4b6b99432adc4954993ecf24753f3f6c, type: 2}

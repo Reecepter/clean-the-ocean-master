@@ -9,7 +9,7 @@ public class TurnUnhealthy : MonoBehaviour
 
     //public Material material1;
     //public Material material2;
-    float duration = 2.0f;
+    float duration = 6.0f;
     //Renderer rend;
 
     float unhealthyStrength;
@@ -38,6 +38,10 @@ public class TurnUnhealthy : MonoBehaviour
     {
         StartCoroutine(LerpMaterial());
     }
+    public void StartHealthy()
+    {
+        StartCoroutine(LerpMaterialBack());
+    }
 
     public IEnumerator LerpMaterial()
     {
@@ -52,6 +56,22 @@ public class TurnUnhealthy : MonoBehaviour
             unhealthyStrength = Mathf.Lerp(0, 1, time / duration);
             seaweedShader.SetFloat("_LerpAmount", unhealthyStrength);
             
+            yield return null;
+        }
+    }
+    public IEnumerator LerpMaterialBack()
+    {
+        float time = 0;
+
+        Material seaweedShader = GetComponent<Renderer>().material;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            unhealthyStrength = Mathf.Lerp(1, 0, time / duration);
+            seaweedShader.SetFloat("_LerpAmount", unhealthyStrength);
+
             yield return null;
         }
     }
