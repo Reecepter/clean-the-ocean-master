@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoralUnhealthy : MonoBehaviour
 {
@@ -13,7 +14,14 @@ public class CoralUnhealthy : MonoBehaviour
     void Start()
     {
         rend = this.GetComponent<Renderer>();
-        rend.material = material1;
+        Scene sceneCurrent = SceneManager.GetActiveScene();
+        if (sceneCurrent.name.Equals("_mainScene_unhealthy")){
+            this.GetComponent<Renderer>().material = material2;
+        }
+        else
+        {
+            rend.material = material1;
+        }
     }
     public void StartUnhealthy()
     {

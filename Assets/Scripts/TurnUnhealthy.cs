@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnUnhealthy : MonoBehaviour
 {
@@ -17,16 +18,15 @@ public class TurnUnhealthy : MonoBehaviour
 
     //bool allowTrans = false;
 
-    //void Start()
-    //{
-    //    //rend = this.GetComponent<Renderer>();
-
-    //    // At start, use the first material
-    //    //rend.material = material1;
-    //    //material1 = rend.material;
-    //    StartCoroutine(LerpMaterial());
-
-    //}
+    void OnEnable()
+    {
+        Scene sceneCurrent = SceneManager.GetActiveScene();
+        if (sceneCurrent.name.Equals("_mainScene_unhealthy"))
+        {
+            Material seaweedShader = GetComponent<Renderer>().material;
+            seaweedShader.SetFloat("_LerpAmount", 1);
+        }
+    }
 
     void Update()
     {
