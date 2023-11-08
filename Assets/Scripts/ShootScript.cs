@@ -24,6 +24,11 @@ public class ShootScript : MonoBehaviour
 
     public InputActionReference triggerInputActionRefence;
     bool canShoot = false;
+
+    //public float range = 100f;
+    //public Camera cam;
+
+
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -44,6 +49,13 @@ public class ShootScript : MonoBehaviour
             StartCoroutine(StartRecoil());
             shootParticle.Play();
             particleSound.Play();
+
+            //RaycastHit hit;
+            //if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+            //{
+            //    Debug.Log("Fired");
+            //    Debug.Log(hit.transform.name);
+            //}
         }
     }
     public void EnableShoot()

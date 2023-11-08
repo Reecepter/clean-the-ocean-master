@@ -11,7 +11,7 @@ public class CapsuleRotation : MonoBehaviour
     public InputActionReference rightHandTurn;
 
     Vector2 thumbstickR;
-    public float sensitivityRot = 0.5f;
+    public float sensitivityRot = 0.75f;
     // Start is called before the first frame update
     void OnEnable()
     {
