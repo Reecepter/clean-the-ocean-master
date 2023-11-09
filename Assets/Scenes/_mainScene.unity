@@ -67716,7 +67716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: reverse
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
