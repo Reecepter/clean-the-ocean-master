@@ -8,6 +8,7 @@ public class SceneTransit : MonoBehaviour
 {
     public Material fadeMaterial = null;
     public SpriteRenderer credit_SR;
+    public GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,12 +33,16 @@ public class SceneTransit : MonoBehaviour
 
     public void FadeIn()
     {
+        cube.gameObject.SetActive(true);
         Tween myTween = fadeMaterial.DOFade(0f, 1.5f);
+        cube.gameObject.SetActive(false);
     }
 
     public void FadeOut()
     {
+        cube.gameObject.SetActive(true);
         Tween myTween = fadeMaterial.DOFade(1f, 1.5f);
+        cube.gameObject.SetActive(true);
     }
 
     public void showCredit() {
