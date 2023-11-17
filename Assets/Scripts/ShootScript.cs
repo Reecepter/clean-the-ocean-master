@@ -16,7 +16,7 @@ public class ShootScript : MonoBehaviour
     ParticleSystem shootParticle;
     public AudioSource particleSound;
 
-    public GameObject reticle;
+    //public GameObject reticle;
 
     public GameObject ship;
 
@@ -33,7 +33,7 @@ public class ShootScript : MonoBehaviour
     void OnEnable()
     {
         triggerInputActionRefence.action.performed += OnFire;
-        reticle.SetActive(false);
+        //reticle.SetActive(false);
     }
 
     private void OnFire(InputAction.CallbackContext context)
@@ -61,12 +61,12 @@ public class ShootScript : MonoBehaviour
     public void EnableShoot()
     {
         canShoot = true;
-        reticle.SetActive(true);
+        //reticle.SetActive(true);
     }
     public void DisableShoot()
     {
         canShoot = false;
-        reticle.SetActive(false);
+        //reticle.SetActive(false);
     }
     private void OnDestroy()
     {

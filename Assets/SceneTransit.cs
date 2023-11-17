@@ -8,6 +8,7 @@ public class SceneTransit : MonoBehaviour
 {
     public Material fadeMaterial = null;
     public SpriteRenderer credit_SR;
+    public GameObject boxForFade;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class SceneTransit : MonoBehaviour
     }
 
     IEnumerator Fade(int index) {
+        //boxForFade.SetActive(true);
         Tween myTween = fadeMaterial.DOFade(1f, 1.5f);
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(index);
@@ -33,6 +35,7 @@ public class SceneTransit : MonoBehaviour
     public void FadeIn()
     {
         Tween myTween = fadeMaterial.DOFade(0f, 1.5f);
+        //boxForFade.SetActive(false);
     }
 
     public void FadeOut()
