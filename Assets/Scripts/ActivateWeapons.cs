@@ -14,7 +14,7 @@ public class ActivateWeapons : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("collison");
+        Debug.Log("collison");
         if (other.gameObject.tag.Equals("Player"))
         {
             shoot = other.gameObject.GetComponentInChildren<ShootScript>();

@@ -5908,11 +5908,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025025323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &104796921 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7703202469053190188, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-  m_PrefabInstance: {fileID: 2106705532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107017975
 GameObject:
   m_ObjectHideFlags: 0
@@ -21809,11 +21804,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1042361525996828, guid: 6943138a0c4a8fd4ea27b63049acac96, type: 3}
   m_PrefabInstance: {fileID: 488116434}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &516243227 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5664259257992850823, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-  m_PrefabInstance: {fileID: 2106705532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &524502714
 GameObject:
   m_ObjectHideFlags: 0
@@ -27265,7 +27255,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeMaterial: {fileID: 2100000, guid: 010b147e494bcac428e37d0bcc9af7c3, type: 2}
   credit_SR: {fileID: 0}
-  cube: {fileID: 516243227}
 --- !u!4 &689790262
 Transform:
   m_ObjectHideFlags: 0
@@ -32900,6 +32889,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 546765278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &837269753 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1268223742045179262, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &866327538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67484,13 +67478,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1401106882514708019, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_Reticle
+      propertyPath: m_LineOriginTransform
       value: 
-      objectReference: {fileID: 104796921}
-    - target: {fileID: 1401106882514708019, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_LineLength
-      value: 15
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 837269753}
     - target: {fileID: 1529892246826652119, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6877214
@@ -67519,13 +67509,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5208588450726629926, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 5357393620574202197, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_RayOriginTransform
+      value: 
+      objectReference: {fileID: 837269753}
     - target: {fileID: 5664259257992850823, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6414519309068811738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: far clip plane
