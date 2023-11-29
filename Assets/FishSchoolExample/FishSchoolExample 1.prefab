@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4182273197527717643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.25, y: 0.698, z: -5.514}
+  m_LocalPosition: {x: -1.7928433, y: 6.12, z: 9.883392}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -122,10 +122,10 @@ MonoBehaviour:
   numFish: 20
   allFish: []
   swimLimits: {x: 28, y: 5, z: 28}
-  flockSize: {x: 5, y: 5, z: 5}
+  flockSize: {x: 10, y: 10, z: 10}
   flockChangeFrequency: 10
   goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 1.78
   maxSpeed: 3.02
-  neighborDistance: 4.42
+  neighborDistance: 4.89
   rotationSpeed: 3.18

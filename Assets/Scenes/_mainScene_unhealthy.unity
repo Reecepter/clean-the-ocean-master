@@ -43412,6 +43412,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1118557719}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1423786002}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!4 &1093723892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3448578808225529050, guid: 8196e70d5628d824488f4ceb51cb253c, type: 3}
@@ -43533,6 +43557,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 611562745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1118557718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4182273197527717643, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+      propertyPath: m_Name
+      value: FishSchoolExample
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717643, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+--- !u!1 &1118557719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4182273197527717643, guid: f348d9b14e177904397a75ac4e1f746c, type: 3}
+  m_PrefabInstance: {fileID: 1118557718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124284448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3110719640724837075, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -54461,6 +54523,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1423786001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4182273197527717643, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+      propertyPath: m_Name
+      value: FishSchoolExample 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717643, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182273197527717646, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+--- !u!1 &1423786002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4182273197527717643, guid: 40653110c6c94ee4baf7780d65773219, type: 3}
+  m_PrefabInstance: {fileID: 1423786001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1425482527
 GameObject:
   m_ObjectHideFlags: 0
@@ -67473,6 +67573,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1401106882514708019, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_ValidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1401106882514708019, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_InvalidColorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1529892246826652119, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6877214
@@ -67492,10 +67600,6 @@ PrefabInstance:
     - target: {fileID: 1529892246826652119, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 2594105064625409706, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: sensitivityRot
-      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4113171461107797629, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Name
@@ -68041,3 +68145,5 @@ SceneRoots:
   - {fileID: 2022602853}
   - {fileID: 1092297698}
   - {fileID: 1703011972}
+  - {fileID: 1118557718}
+  - {fileID: 1423786001}
