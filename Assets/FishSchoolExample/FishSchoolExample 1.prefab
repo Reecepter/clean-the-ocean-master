@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4182273197527717641}
   - component: {fileID: 4182273197527717642}
   m_Layer: 0
-  m_Name: FishSchoolExample
+  m_Name: FishSchoolExample 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac4da18335417e4db70fe14695daaf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 5523411463923659772, guid: f975f850f2fd619429c63aab9562ab95, type: 3}
+  fishPrefab: {fileID: 4600326680174775705, guid: 0e66373341b893444a51375778a3ba9b, type: 3}
   numFish: 20
   allFish: []
   swimLimits: {x: 28, y: 5, z: 28}
