@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hands_solid
+  m_Name: Hands_solid 1
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -145,8 +145,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.8460572, b: 0.6179246, a: 0.75}
-    - _Color: {r: 1, g: 0.8460572, b: 0.6179245, a: 0.75}
+    - _BaseColor: {r: 0.20363119, g: 0.28877112, b: 0.3018868, a: 0.75}
+    - _Color: {r: 0.20363116, g: 0.28877106, b: 0.30188674, a: 0.75}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MyColor: {r: 0.87058824, g: 0.87058824, b: 0.87058824, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
