@@ -68593,6 +68593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5359015632991798604, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
     - target: {fileID: 5568714065108104680, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.009
@@ -68633,6 +68637,10 @@ PrefabInstance:
       propertyPath: barrelArray.Array.data[6]
       value: 
       objectReference: {fileID: 1453423024}
+    - target: {fileID: 7781920581914450762, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 5686134208185136530, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
       value: 
