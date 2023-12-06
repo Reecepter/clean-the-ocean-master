@@ -65,7 +65,7 @@ public class TriggerBarrels : MonoBehaviour
             canDropBarrel = false;
             //dropTime = 10f;
             audSource.PlayOneShot(triggerAudio);
-            playerSpline.Resume();
+            //playerSpline.Resume();
             Debug.Log("Resume Player Movement");
             if (dropUI.activeSelf == true)
             {
@@ -91,7 +91,7 @@ public class TriggerBarrels : MonoBehaviour
             if (canDropBarrel == false)
             {
                 canDropBarrel = true;
-                playerSpline.Pause();
+                playerSpline.Pause(); //ship becomes unpaused via barrel path event
                 audSource.PlayOneShot(readyAudio);
             }
         }
