@@ -10,7 +10,7 @@ public class TriggerBarrels : MonoBehaviour
     public splineMove[] barrelArray = new splineMove[7];
     public splineMove playerSpline;
     int barrelIndex;
-    float dropTime = 0f;
+    //float dropTime = 0f;
 
     public InputActionReference barrelTrigger;
     public GameObject dropUI;

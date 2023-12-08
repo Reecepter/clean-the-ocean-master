@@ -3272,59 +3272,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   loopType: 0
   waypoints: []
-  events:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneTransit, Assembly-CSharp
-        m_MethodName: FadeIn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls: []
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneTransit, Assembly-CSharp
-        m_MethodName: loadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneTransit, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  events: []
   pathType: 1
   pathMode: 1
   easeType: 1
@@ -3689,6 +3637,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 353815334203748501}
+  - {fileID: 6597367165782521063}
   m_Father: {fileID: 1268223742045179262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4715905514751836655
@@ -3802,7 +3751,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4686112161943013748}
   m_Father: {fileID: 5253480693390663722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5000171756914573681
@@ -11777,7 +11727,9 @@ MonoBehaviour:
   subBody: {fileID: 1200425670206082210}
   rightHandTurn: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftHandTurn: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  sensitivityRot: 0.5
+  rotationSpeed: 5
+  maxVerticalAngle: 60
+  minVerticalAngle: -60
 --- !u!1 &7623484602835949202
 GameObject:
   m_ObjectHideFlags: 0
@@ -14036,4 +13988,128 @@ MonoBehaviour:
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198103793226961838, guid: 990bf98ec179b3e4b8304aa2958b1e2c, type: 3}
   m_PrefabInstance: {fileID: 6952861761732272191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7699528716803749374
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3858452989552702599}
+    m_Modifications:
+    - target: {fileID: 142292176864937470, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_Name
+      value: Oculus Controller L
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+--- !u!4 &4686112161943013748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3157677256437005450, guid: eed31f5b5adb64c47a378baafc7f9b4d, type: 3}
+  m_PrefabInstance: {fileID: 7699528716803749374}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8096588980315424877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4921803796248804979}
+    m_Modifications:
+    - target: {fileID: 142292176864937470, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_Name
+      value: Oculus Controller R
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+--- !u!4 &6597367165782521063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3157677256437005450, guid: 83d4a2dd67a15144eb23c3c924bc99e6, type: 3}
+  m_PrefabInstance: {fileID: 8096588980315424877}
   m_PrefabAsset: {fileID: 0}
