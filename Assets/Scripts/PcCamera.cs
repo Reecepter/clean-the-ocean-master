@@ -5,44 +5,53 @@ using UnityEngine.InputSystem;
 
 public class PcCamera : MonoBehaviour
 {
-    public InputActionReference mouseDelta;
+    //[SerializeField] float minLookDistance = 25f;
+    //[SerializeField] Transform cameraOffset;
 
-    private float mouseSensitivity = 100f;
-    private Vector2 mouseLook;
-    private float xRot = 0f;
+    //public float mouseSens = 20f;
 
-    public Transform playerbody;
+    //float xRotation = 0f;
 
-    private void Awake()
+    //private void Start()
+    //{
+    //    Cursor.lockState = CursorLockMode.Locked;
+    //}
+
+    //private void Update()
+    //{
+    //    float mouseX = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
+    //    float mouseY = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
+
+    //    xRotation -= mouseY;
+    //    xRotation = Mathf.Clamp(xRotation, -90f, minLookDistance);
+
+    //    transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+    //    cameraOffset.Rotate(Vector3.up * mouseX);
+    //}
+    public float sensitivity = 2.0f; // Adjust the mouse sensitivity
+
+    private float rotationX = 0f;
+
+    private void Start()
     {
-        //playerbody = transform.parent;
-
         Cursor.lockState = CursorLockMode.Locked;
     }
-    private void OnEnable()
-    {
-        mouseDelta.action.Enable();
-    }
-    private void OnDisable()
-    {
-        mouseDelta.action.Disable();
-    }
-    private void Update()
-    {
-        Look();
-    }
-    private void Look()
-    {
-        mouseLook = mouseDelta.action.ReadValue<Vector2>();
 
-        float mouseX = mouseLook.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = mouseLook.y * mouseSensitivity * Time.deltaTime;
+    void Update()
+    {
+        // Get mouse input
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
 
-        xRot -= mouseY;
-        xRot = Mathf.Clamp(xRot, -90f, 90f);
+        // Rotate the player horizontally based on mouse X movement
+        transform.Rotate(Vector3.up * mouseX * sensitivity);
 
+        // Calculate the vertical rotation using quaternions
+        rotationX -= mouseY * sensitivity;
+        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRot, 0, 0);
-        playerbody.Rotate(Vector3.up * mouseX);
+        // Apply the rotation to the camera
+        transform.localRotation = Quaternion.Euler(rotationX, transform.localEulerAngles.y, 0f);
     }
+
 }

@@ -96,5 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material1: {fileID: 2100000, guid: 29871030822ef0447ad7feb4087ff7f3, type: 2}
-  material2: {fileID: 2100000, guid: ae44c8a185f0d224688655339c3c428f, type: 2}
+  healthyColor: {r: 1, g: 1, b: 1, a: 1}
+  unhealthyColor: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
