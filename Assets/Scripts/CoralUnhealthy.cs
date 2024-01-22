@@ -34,7 +34,7 @@ public class CoralUnhealthy : MonoBehaviour
         
         while (time < duration)
         {
-            Color.Lerp(healthyColor, unhealthyColor, time / (duration));
+            rend.material.color = Color.Lerp(healthyColor, unhealthyColor, time / (duration));
             time += Time.deltaTime;
             
             yield return null;
@@ -52,7 +52,7 @@ public class CoralUnhealthy : MonoBehaviour
 
         while (time < duration)
         {
-            Color.Lerp(unhealthyColor, healthyColor, time / (duration));
+            rend.material.color = Color.Lerp(unhealthyColor, healthyColor, time / (duration));
             time += Time.deltaTime;
 
             yield return null;
