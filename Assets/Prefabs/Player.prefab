@@ -12988,7 +12988,7 @@ MonoBehaviour:
   subBody: {fileID: 1200425670206082210}
   rightHandTurn: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftHandTurn: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  rotationSpeed: 5
+  rotationSpeed: 20
   maxVerticalAngle: 60
   minVerticalAngle: -60
 --- !u!1 &7623484602835949202
