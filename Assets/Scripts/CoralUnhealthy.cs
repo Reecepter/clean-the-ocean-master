@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class CoralUnhealthy : MonoBehaviour
 {
     float duration = 6f;
-    public Material material1;
-    public Material material2;
+    public Color healthyColor = Color.white;
+    public Color unhealthyColor;
     Renderer rend;
 
     // Start is called before the first frame update
@@ -16,11 +16,11 @@ public class CoralUnhealthy : MonoBehaviour
         rend = this.GetComponent<Renderer>();
         Scene sceneCurrent = SceneManager.GetActiveScene();
         if (sceneCurrent.name.Equals("_mainScene_unhealthy")){
-            this.GetComponent<Renderer>().material = material2;
+            this.GetComponent<Renderer>().material.color = unhealthyColor;
         }
         else
         {
-            rend.material = material1;
+            rend.material.color = healthyColor;
         }
     }
     public void StartUnhealthy()
@@ -29,15 +29,34 @@ public class CoralUnhealthy : MonoBehaviour
     }
     public IEnumerator TurnCoralUnhealthy()
     {
-        float time = 0;
-        //rend.material = material1;
+        float time = 0f;
+        rend.material.color = healthyColor;
+        
         while (time < duration)
         {
-            rend.material.Lerp(rend.material, material2, time / duration);
+            rend.material.color = Color.Lerp(healthyColor, unhealthyColor, time / (duration));
             time += Time.deltaTime;
             
             yield return null;
         }
-        rend.material = material2;
+        rend.material.color = unhealthyColor;
+    }
+    public void StartHealthy()
+    {
+        StartCoroutine(TurnCoralHealthy());
+    }
+    public IEnumerator TurnCoralHealthy()
+    {
+        float time = 0f;
+        rend.material.color = unhealthyColor;
+
+        while (time < duration)
+        {
+            rend.material.color = Color.Lerp(unhealthyColor, healthyColor, time / (duration));
+            time += Time.deltaTime;
+
+            yield return null;
+        }
+        rend.material.color = healthyColor;
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8485714314534486818}
   - component: {fileID: 8052052868336375240}
   - component: {fileID: 9112872486171295297}
+  - component: {fileID: 9154473907587290440}
   m_Layer: 0
   m_Name: Coral_3_G12
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9154473907587290440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769416994153030050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthyColor: {r: 1, g: 1, b: 1, a: 1}
+  unhealthyColor: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}

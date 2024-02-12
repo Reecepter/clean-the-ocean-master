@@ -44,127 +44,74 @@ public class CapsuleRotation : MonoBehaviour
         RotateObjectOnInput();
         
     }
-
     //void RotationControl()
     //{
     //    if (thumbstickR.x > 0.6f || thumbstickR.x < -0.6f)
     //    {
-    //        subBody.transform.Rotate(0, thumbstickR.x * sensitivityRot, 0);
-    //    }
-    //    if (thumbstickL.y > 0.6f || thumbstickL.y < -0.6f)
-    //    {
-    //        // Calculate the desired rotation based on thumbstick input
-    //        float desiredRotation = thumbstickL.y * sensitivityRot;
-
-    //        // Clamp the rotation to stay within the range of -90 to 90 degrees
-    //        float clampedRotation = Mathf.Clamp(desiredRotation, -90f, 90f);
-    //        Debug.Log(clampedRotation);
-
-    //        // Apply the clamped rotation to the object along the X-axis
-    //        subBody.transform.localrotation = Quaternion.Euler(clampedRotation, 0, 0);
-    //    }
-    //}
-    //void RotationControl()
-    //{
-    //    if (thumbstickR.x > 0.6f || thumbstickR.x < -0.6f)
-    //    {
-    //        subBody.transform.Rotate(0, thumbstickR.x * sensitivityRot, 0);
+    //        subBody.transform.Rotate(0, thumbstickR.x * rotationSpeed, 0);
     //    }
 
     //    if (thumbstickL.y > 0.6f || thumbstickL.y < -0.6f)
     //    {
     //        // Calculate the desired rotation based on thumbstick input
-    //        float desiredRotation = thumbstickL.y * sensitivityRot;
+    //        float desiredRotation = thumbstickL.y * rotationSpeed;
 
     //        // Get the current local rotation around the X-axis
-    //        float currentRotationX = subBody.transform.localRotation.eulerAngles.x;
-
-    //        // Define the maximum allowed rotation (adjust the value accordingly)
-    //        float maxRotation = 45f;
-
-    //        // Calculate the potential new rotation without applying it
-    //        float newRotation = currentRotationX + desiredRotation;
-
-    //        // Ensure the new rotation stays within the range of -maxRotation to maxRotation
-    //        float clampedRotation = Mathf.Clamp(newRotation, -maxRotation, maxRotation);
-
-    //        // Check if the new rotation crosses the 0-degree boundary
-    //        if (Mathf.Abs(newRotation) < Mathf.Abs(currentRotationX))
-    //        {
-    //            // If it does, set the clamped rotation to 0 to avoid jumping
-    //            clampedRotation = 0f;
-    //        }
-
-    //        Debug.Log(clampedRotation);
-
-    //        // Apply the clamped rotation to the object along the X-axis
-    //        subBody.transform.localRotation = Quaternion.Euler(clampedRotation, 0, 0);
-    //    }
-    //}
-    //void RotationControl()
-    //{
-    //    if (thumbstickR.x > 0.6f || thumbstickR.x < -0.6f)
-    //    {
-    //        subBody.transform.Rotate(0, thumbstickR.x * sensitivityRot, 0);
-    //    }
-
-    //    if (thumbstickL.y > 0.6f || thumbstickL.y < -0.6f)
-    //    {
-    //        // Calculate the desired rotation based on thumbstick input
-    //        float desiredRotation = thumbstickL.y * sensitivityRot;
-
-    //        // Get the current local rotation around the X-axis
-    //        Quaternion currentRotation = subBody.transform.localRotation;
+    //        Vector3 currentRotation = subBody.transform.localRotation.eulerAngles;
 
     //        // Define the maximum allowed rotation in either direction (adjust the value accordingly)
     //        float maxRotation = 45f;
 
     //        // Calculate the target rotation based on the thumbstick input
-    //        Quaternion targetRotation = Quaternion.Euler(Mathf.Clamp(currentRotation.eulerAngles.x + desiredRotation, -maxRotation, maxRotation), 0, 0);
+    //        float targetRotationX = Mathf.Clamp(currentRotation.x + desiredRotation, -maxRotation, maxRotation);
 
-    //        // Smoothly interpolate between the current and target rotation
-    //        float rotationSpeed = 5f; // Adjust the speed of rotation
-    //        subBody.transform.localRotation = Quaternion.Lerp(currentRotation, targetRotation, Time.deltaTime * rotationSpeed);
+    //        // Set the new rotation
+    //        subBody.transform.localRotation = Quaternion.Euler(targetRotationX, currentRotation.y, currentRotation.z);
     //    }
     //}
-    void RotationControl()
+
+    //private void RotateObjectOnInput()
+    //{
+    //    thumbstickR = rightHandTurn.action.ReadValue<Vector2>();
+    //    thumbstickL = leftHandTurn.action.ReadValue<Vector2>();
+    //    float verticalRotation = Mathf.Clamp(thumbstickL.y, -90f, 180f);
+    //    Vector3 rotationAmount = new Vector3(-verticalRotation, thumbstickR.x, 0f) * rotationSpeed * Time.deltaTime;
+    //    subBody.transform.Rotate(rotationAmount, Space.Self);
+    //}
+
+    private void OnDisable()
     {
-        if (thumbstickR.x > 0.6f || thumbstickR.x < -0.6f)
-        {
-            subBody.transform.Rotate(0, thumbstickR.x * rotationSpeed, 0);
-        }
-
-        if (thumbstickL.y > 0.6f || thumbstickL.y < -0.6f)
-        {
-            // Calculate the desired rotation based on thumbstick input
-            float desiredRotation = thumbstickL.y * rotationSpeed;
-
-            // Get the current local rotation around the X-axis
-            Vector3 currentRotation = subBody.transform.localRotation.eulerAngles;
-
-            // Define the maximum allowed rotation in either direction (adjust the value accordingly)
-            float maxRotation = 45f;
-
-            // Calculate the target rotation based on the thumbstick input
-            float targetRotationX = Mathf.Clamp(currentRotation.x + desiredRotation, -maxRotation, maxRotation);
-
-            // Set the new rotation
-            subBody.transform.localRotation = Quaternion.Euler(targetRotationX, currentRotation.y, currentRotation.z);
-        }
+        rightHandTurn.action.performed -= Turned;
+        leftHandTurn.action.performed -= Turned2;
     }
 
     private void RotateObjectOnInput()
     {
         thumbstickR = rightHandTurn.action.ReadValue<Vector2>();
         thumbstickL = leftHandTurn.action.ReadValue<Vector2>();
-        float verticalRotation = Mathf.Clamp(thumbstickL.y, -90f, 180f);
-        Vector3 rotationAmount = new Vector3(-verticalRotation, thumbstickR.x, 0f) * rotationSpeed * Time.deltaTime;
+
+        // Calculate rotation amount based on thumbstick input
+        Vector3 rotationAmount = new Vector3(-thumbstickL.y, thumbstickR.x, 0f) * rotationSpeed * Time.deltaTime;
+
+        // Apply rotation
         subBody.transform.Rotate(rotationAmount, Space.Self);
+
+        // Clamp vertical rotation
+        Vector3 currentRotation = subBody.transform.localRotation.eulerAngles;
+        currentRotation.x = ClampAngle(currentRotation.x, minVerticalAngle, maxVerticalAngle);
+        subBody.transform.localRotation = Quaternion.Euler(currentRotation);
     }
 
-    private void OnDisable()
+    private float ClampAngle(float angle, float min, float max)
     {
-        rightHandTurn.action.performed -= Turned;
-        leftHandTurn.action.performed -= Turned2;
+        // Normalize angle to be between -180 and 180 degrees
+        angle %= 360f;
+        if (angle > 180f)
+            angle -= 360f;
+        else if (angle < -180f)
+            angle += 360f;
+
+        // Clamp angle between min and max
+        return Mathf.Clamp(angle, min, max);
     }
 }

@@ -16,7 +16,7 @@ public class ShootScript : MonoBehaviour
     ParticleSystem shootParticle;
     public AudioSource particleSound;
 
-    //public GameObject reticle;
+    public GameObject reticle;
 
     public GameObject ship;
 
@@ -25,48 +25,32 @@ public class ShootScript : MonoBehaviour
     public InputActionReference triggerInputActionRefence;
     bool canShoot = false;
 
-    //public float range = 100f;
-    //public Camera cam;
-
 
     // Start is called before the first frame update
     void OnEnable()
     {
         triggerInputActionRefence.action.performed += OnFire;
-        //reticle.SetActive(false);
+        reticle.SetActive(false);
     }
 
     private void OnFire(InputAction.CallbackContext context)
     {
-        //GameObject shot;
-        //shot = Instantiate(Projectile, ProjectileSpawnPoint.transform.position, ProjectileSpawnPoint.transform.rotation);
-        //Destroy(shot, 2.0f);
-        //GameObject shot2;
-        //shot2 = Instantiate(Projectile, ProjectileSpawnPoint2.transform.position, ProjectileSpawnPoint.transform.rotation);
-        //Destroy(shot2, 2.0f);
         if (canShoot == true)
         {
             StartCoroutine(StartRecoil());
             shootParticle.Play();
             particleSound.Play();
-
-            //RaycastHit hit;
-            //if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
-            //{
-            //    Debug.Log("Fired");
-            //    Debug.Log(hit.transform.name);
-            //}
         }
     }
     public void EnableShoot()
     {
         canShoot = true;
-        //reticle.SetActive(true);
+        reticle.SetActive(true);
     }
     public void DisableShoot()
     {
         canShoot = false;
-        //reticle.SetActive(false);
+        reticle.SetActive(false);
     }
     private void OnDestroy()
     {
