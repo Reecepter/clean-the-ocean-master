@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3adba17be637794419c1cf7fc9133415, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.83137256}
+  m_Sprite: {fileID: 21300000, guid: a9e7ef3d9ca3d6c479e347584893c41c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7176471}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5923704096997466135}
   m_Layer: 0
-  m_Name: DropTaskIcon
+  m_Name: ShootTaskIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class ActivateWeapons : MonoBehaviour
 {
+    public GameObject player;
     ShootScript shoot;
 
+    private void Start()
+    {
+        shoot = player.gameObject.GetComponentInChildren<ShootScript>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -17,7 +22,7 @@ public class ActivateWeapons : MonoBehaviour
         //Debug.Log("collison");
         if (other.gameObject.tag.Equals("Player"))
         {
-            shoot = other.gameObject.GetComponentInChildren<ShootScript>();
+            //shoot = other.gameObject.GetComponentInChildren<ShootScript>();
             shoot.EnableShoot();
         }
     }
@@ -27,5 +32,9 @@ public class ActivateWeapons : MonoBehaviour
         {
             shoot.DisableShoot();
         }
+    }
+    private void OnDisable()
+    {
+        shoot.DisableShoot();
     }
 }
