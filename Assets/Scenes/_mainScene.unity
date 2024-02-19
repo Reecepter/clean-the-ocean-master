@@ -69785,9 +69785,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1053265409801198919, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1795453302095555922, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595684664809371977, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_text
+      value: Move
+      objectReference: {fileID: 0}
     - target: {fileID: 4113171461107797629, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653578841410466010, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.522
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653578841410466010, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.422
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_EnableStrafe
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_fontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.w
+      value: -7.579934
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.y
+      value: 2.7453954
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.z
+      value: -11.150261
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7450853026631813677, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: barrelArray.Array.data[0]
@@ -69817,6 +69861,38 @@ PrefabInstance:
       propertyPath: barrelArray.Array.data[6]
       value: 
       objectReference: {fileID: 1453423024}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_fontSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.w
+      value: -1.4066006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.x
+      value: -0.08349288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.y
+      value: -6.2470646
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_margin.z
+      value: -11.0667925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7691004591735396797, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069627301351848292, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_text
+      value: Press [A] to Drop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633696015774598905, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
       value: 
