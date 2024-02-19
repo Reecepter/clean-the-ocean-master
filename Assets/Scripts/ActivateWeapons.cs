@@ -35,6 +35,6 @@ public class ActivateWeapons : MonoBehaviour
     }
     private void OnDisable()
     {
-        shoot.DisableShoot();
+        //shoot.DisableShoot();
     }
 }
