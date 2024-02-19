@@ -7,9 +7,9 @@ public class ActivateWeapons : MonoBehaviour
     public GameObject player;
     ShootScript shoot;
 
-    private void Start()
+    private void OnEnable()
     {
-        shoot = player.gameObject.GetComponentInChildren<ShootScript>();
+        shoot = player.GetComponentInChildren<ShootScript>();
     }
     // Update is called once per frame
     void Update()
