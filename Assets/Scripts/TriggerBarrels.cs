@@ -10,6 +10,7 @@ public class TriggerBarrels : MonoBehaviour
     public splineMove[] barrelArray = new splineMove[7];
     public splineMove playerSpline;
     int barrelIndex;
+    public GameObject movement;
     //float dropTime = 0f;
 
     public InputActionReference barrelTrigger;
@@ -91,7 +92,8 @@ public class TriggerBarrels : MonoBehaviour
             if (canDropBarrel == false)
             {
                 canDropBarrel = true;
-                playerSpline.Pause(); //ship becomes unpaused via barrel path event
+                //playerSpline.Pause(); //ship becomes unpaused via barrel path event
+                movement.SetActive(false);
                 audSource.PlayOneShot(readyAudio);
             }
         }
