@@ -12,7 +12,7 @@ public class SceneTransit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        FadeIn();
     }
 
     // Update is called once per frame
