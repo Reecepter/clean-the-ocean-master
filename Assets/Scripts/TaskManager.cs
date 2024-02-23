@@ -11,6 +11,8 @@ public class TaskManager : MonoBehaviour
     private int currentTask = 0;
     [SerializeField]
     private UnityEvent _NextLevel;
+    public AudioSource audSource;
+    public AudioClip nextTaskAudio;
     
     public void NextTask()
     {
@@ -29,6 +31,18 @@ public class TaskManager : MonoBehaviour
         {
             taskIcons[currentTask].SetActive(true);
             taskTriggers[currentTask].SetActive(true);
+            if(currentTask != 7)
+            {
+                PlayNextTaskAudio();
+            }
+        }
+    }
+
+    private void PlayNextTaskAudio()
+    {
+        if(audSource != null && !nextTaskAudio.Equals(null))
+        {
+            audSource.PlayOneShot(nextTaskAudio);
         }
     }
 }

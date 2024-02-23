@@ -17,6 +17,7 @@ public class TriggerBarrels : MonoBehaviour
     public GameObject dropUI;
     public AudioClip readyAudio;
     public AudioClip triggerAudio;
+    public AudioClip dropZoneLine;
     private AudioSource audSource;
     private void OnEnable()
     {
@@ -95,6 +96,7 @@ public class TriggerBarrels : MonoBehaviour
                 //playerSpline.Pause(); //ship becomes unpaused via barrel path event
                 movement.SetActive(false);
                 audSource.PlayOneShot(readyAudio);
+                audSource.PlayOneShot(dropZoneLine);
             }
         }
         else

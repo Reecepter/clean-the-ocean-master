@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_CullingMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 137850045483297782, guid: 5ef6cda3c62fbd94ea7530448a7a94ef, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
