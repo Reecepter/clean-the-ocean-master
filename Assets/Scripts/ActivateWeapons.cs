@@ -6,17 +6,13 @@ public class ActivateWeapons : MonoBehaviour
 {
     public GameObject player;
     ShootScript shoot;
+    public AudioSource audSource;
+    public AudioClip weaponsOnline;
 
     private void OnEnable()
     {
         shoot = player.GetComponentInChildren<ShootScript>();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("collison");
@@ -24,6 +20,7 @@ public class ActivateWeapons : MonoBehaviour
         {
             //shoot = other.gameObject.GetComponentInChildren<ShootScript>();
             shoot.EnableShoot();
+            PlayWeaponsOnline();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -36,5 +33,17 @@ public class ActivateWeapons : MonoBehaviour
     private void OnDisable()
     {
         //shoot.DisableShoot();
+    }
+
+    private void PlayWeaponsOnline()
+    {
+        if(audSource != null && !weaponsOnline.Equals(null))
+        {
+            if (audSource.isPlaying)
+            {
+                audSource.Stop();
+            }
+            audSource.PlayOneShot(weaponsOnline);
+        }
     }
 }

@@ -6357,7 +6357,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   audSource: {fileID: 2106705541}
+  welcomeAudio: {fileID: 8300000, guid: 3ab74eaedf688bc4ebff3c042a274af6, type: 3}
+  startTasksAudio: {fileID: 8300000, guid: d3bb3c8fdff52eb49b653edb3c3f485a, type: 3}
   nextTaskAudio: {fileID: 8300000, guid: 2f1a1ccd415c5e440aa164f18fcf6b6e, type: 3}
+  nextLevelAudio: {fileID: 8300000, guid: 408fdd01e257c634ba972c1fc1e053f2, type: 3}
 --- !u!4 &297998703
 Transform:
   m_ObjectHideFlags: 0
@@ -27592,6 +27595,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 415772820224296926, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479808379083697455, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479808379083697455, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 856912207099879813, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -50884,7 +50895,7 @@ Terrain:
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
+  m_ShadowCastingMode: 1
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
@@ -69837,6 +69848,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1199584983532685974, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_Antialiasing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1215625317371109146, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_text
       value: Turn
@@ -69845,6 +69860,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Mouse
       objectReference: {fileID: 0}
+    - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: _CloseHandout.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 297998702}
+    - target: {fileID: 2811201723128323269, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IgnoreTrackingState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4113171461107797629, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Name
       value: Player
@@ -69852,10 +69875,6 @@ PrefabInstance:
     - target: {fileID: 4682052597166498116, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_text
       value: Move Sub
-      objectReference: {fileID: 0}
-    - target: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_EnableStrafe
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7450853026631813677, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: dropZoneLine
@@ -70609,6 +70628,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1125406438482262391, guid: 86084d30c4a9b5d4e90ee91815ae0f4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744408619389249659, guid: 86084d30c4a9b5d4e90ee91815ae0f4a, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8319130534285882979, guid: 86084d30c4a9b5d4e90ee91815ae0f4a, type: 3}

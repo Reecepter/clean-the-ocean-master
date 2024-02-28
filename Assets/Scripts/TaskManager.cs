@@ -11,9 +11,17 @@ public class TaskManager : MonoBehaviour
     private int currentTask = 0;
     [SerializeField]
     private UnityEvent _NextLevel;
+
     public AudioSource audSource;
+    public AudioClip welcomeAudio;
+    public AudioClip startTasksAudio;
     public AudioClip nextTaskAudio;
-    
+    public AudioClip nextLevelAudio = null;
+
+    private void Start()
+    {
+        PlayWelcomeAudio();
+    }
     public void NextTask()
     {
         taskIcons[currentTask].SetActive(false);
@@ -35,6 +43,10 @@ public class TaskManager : MonoBehaviour
             {
                 PlayNextTaskAudio();
             }
+            else
+            {
+                PlayNextLevelAudio();
+            }
         }
     }
 
@@ -43,6 +55,34 @@ public class TaskManager : MonoBehaviour
         if(audSource != null && !nextTaskAudio.Equals(null))
         {
             audSource.PlayOneShot(nextTaskAudio);
+        }
+    }
+
+    private void PlayWelcomeAudio()
+    {
+        if(audSource != null && !welcomeAudio.Equals(null))
+        {
+            audSource.PlayOneShot(welcomeAudio);
+        }
+    }
+
+    public void PlayStartTasksAudio()
+    {
+        if (audSource != null && !startTasksAudio.Equals(null))
+        {
+            if (!audSource.isPlaying)
+            {
+                audSource.PlayOneShot(startTasksAudio);
+            }
+            
+        }
+    }
+    
+    public void PlayNextLevelAudio()
+    {
+        if (audSource != null && !nextLevelAudio.Equals(null))
+        {
+            audSource.PlayOneShot(nextLevelAudio);
         }
     }
 }
