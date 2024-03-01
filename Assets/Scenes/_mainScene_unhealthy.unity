@@ -6516,6 +6516,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &258154923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21979,6 +21991,22 @@ Transform:
   - {fileID: 1138994537}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &600737391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6430974559917810339, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &600737393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600737391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b655e1050a85db4d9c9ae963dd6fe3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602586026
 GameObject:
   m_ObjectHideFlags: 0
@@ -27097,7 +27125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnCount
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnRadius
@@ -32642,7 +32670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnCount
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnRadius
@@ -49341,7 +49369,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 905
+    maxNumParticles: 20
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 1
@@ -54046,6 +54074,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1223915743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54767,6 +54807,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1350330183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55418,6 +55470,18 @@ MonoBehaviour:
       - m_Target: {fileID: 503496626}
         m_TargetAssemblyTypeName: ShootScript, Assembly-CSharp
         m_MethodName: DisableShoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -56245,6 +56309,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1456193727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56950,6 +57026,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 600737393}
+        m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
+        m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1591539807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57032,7 +57120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnCount
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3559297176007848096, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
       propertyPath: spawnRadius
@@ -68681,6 +68769,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[0]
+      value: 
+      objectReference: {fileID: 1270501388}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[1]
+      value: 
+      objectReference: {fileID: 149159238}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[2]
+      value: 
+      objectReference: {fileID: 1304930732}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[3]
+      value: 
+      objectReference: {fileID: 254537190}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[4]
+      value: 
+      objectReference: {fileID: 1057837569}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[5]
+      value: 
+      objectReference: {fileID: 750019292}
+    - target: {fileID: 3041574574862828714, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: objectiveLocations.Array.data[6]
+      value: 
+      objectReference: {fileID: 1070298110}
     - target: {fileID: 3090109928072667706, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -69320,6 +69440,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2106705535}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 600737391}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

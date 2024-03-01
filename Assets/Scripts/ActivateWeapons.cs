@@ -39,11 +39,10 @@ public class ActivateWeapons : MonoBehaviour
     {
         if(audSource != null && !weaponsOnline.Equals(null))
         {
-            if (audSource.isPlaying)
+            if (!audSource.isPlaying)
             {
-                audSource.Stop();
+                audSource.PlayOneShot(weaponsOnline);
             }
-            audSource.PlayOneShot(weaponsOnline);
         }
     }
 }

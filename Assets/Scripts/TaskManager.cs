@@ -50,6 +50,17 @@ public class TaskManager : MonoBehaviour
         }
     }
 
+    public void NextLevel()
+    {
+        if(currentTask >= taskIcons.Length)
+        {
+            NextTask();
+        }
+        else
+        {
+            _NextLevel?.Invoke();
+        }
+    }
     private void PlayNextTaskAudio()
     {
         if(audSource != null && !nextTaskAudio.Equals(null))
@@ -70,11 +81,12 @@ public class TaskManager : MonoBehaviour
     {
         if (audSource != null && !startTasksAudio.Equals(null))
         {
-            if (!audSource.isPlaying)
+            if (audSource.isPlaying)
             {
-                audSource.PlayOneShot(startTasksAudio);
+                audSource.Stop();
             }
-            
+            audSource.PlayOneShot(startTasksAudio);
+
         }
     }
     
