@@ -6092,10 +6092,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1203146094}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1789135307}
+        m_TargetAssemblyTypeName: SplineFishDeath, Assembly-CSharp
+        m_MethodName: BeginDeath
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -22547,6 +22547,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5295409774390670868, guid: e717c497b062b764485ab51dcba1590b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1965453194}
+    - targetCorrespondingSourceObject: {fileID: 5295409774390670868, guid: e717c497b062b764485ab51dcba1590b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1965453196}
+    - targetCorrespondingSourceObject: {fileID: 5295409774390670868, guid: e717c497b062b764485ab51dcba1590b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1965453197}
   m_SourcePrefab: {fileID: 100100000, guid: e717c497b062b764485ab51dcba1590b, type: 3}
 --- !u!1 &647355258
 GameObject:
@@ -27648,6 +27654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 2627833368856103250, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2946100795185801906, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_Convex
       value: 0
@@ -27773,6 +27783,14 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -27782,7 +27800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8328612868667736635, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_Convex
@@ -27818,6 +27836,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8449052292992414681, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1203146096}
+    - targetCorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1789135307}
+    - targetCorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1789135308}
   m_SourcePrefab: {fileID: 100100000, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
 --- !u!114 &694539997 stripped
 MonoBehaviour:
@@ -28635,6 +28659,30 @@ MonoBehaviour:
       - m_Target: {fileID: 252207152}
         m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
         m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2059579105}
+        m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
+        m_MethodName: StartUnhealthy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 884386449}
+        m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
+        m_MethodName: StartUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34233,6 +34281,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 258154922}
   m_SourcePrefab: {fileID: 100100000, guid: aff47d0fca1e53244a323dbd82ddc90a, type: 3}
+--- !u!114 &884386449 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4311868477800236158, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &886804661
 GameObject:
   m_ObjectHideFlags: 0
@@ -50398,6 +50457,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1856156698}
+        m_TargetAssemblyTypeName: SplineFishDeath, Assembly-CSharp
+        m_MethodName: BeginDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1965453196}
+        m_TargetAssemblyTypeName: SplineFishDeath, Assembly-CSharp
+        m_MethodName: BeginDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   pathType: 1
   pathMode: 1
   easeType: 1
@@ -58688,6 +58771,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1269881886}
   m_LocalEulerAnglesHint: {x: 0, y: -70.435, z: 0}
+--- !u!1 &1789135303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1789135305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789135303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2d9078dbe17bc4f966c9d2310be047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1789135307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789135303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d531281b43912904f8549f9865fa053f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishSpline: {fileID: 1789135305}
+--- !u!114 &1789135308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789135303}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.001
+  motionMagnitude: 0.001
+  doSpin: 1
+  doMotion: 1
 --- !u!1 &1803150302
 GameObject:
   m_ObjectHideFlags: 0
@@ -59114,6 +59242,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.0819562
       objectReference: {fileID: 0}
+    - target: {fileID: 3777449850943746921, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3949375316362910556, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0000000010430813
@@ -59481,6 +59613,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6579924176781386667, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1856156695}
+    - targetCorrespondingSourceObject: {fileID: 6579924176781386667, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856156698}
+    - targetCorrespondingSourceObject: {fileID: 6579924176781386667, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856156699}
   m_SourcePrefab: {fileID: 100100000, guid: 66d0671368285304ca8c4948a50eb675, type: 3}
 --- !u!114 &1856156695
 MonoBehaviour:
@@ -59522,6 +59660,35 @@ MonoBehaviour:
   lockRotation: 0
   waypointRotation: 0
   rotationTarget: {fileID: 0}
+--- !u!114 &1856156698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259060723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d531281b43912904f8549f9865fa053f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishSpline: {fileID: 1856156695}
+--- !u!114 &1856156699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259060723}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.001
+  motionMagnitude: 0.001
+  doSpin: 1
+  doMotion: 1
 --- !u!1 &1859160617
 GameObject:
   m_ObjectHideFlags: 0
@@ -69711,6 +69878,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1965453196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965453189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d531281b43912904f8549f9865fa053f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishSpline: {fileID: 1965453191}
+--- !u!114 &1965453197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965453189}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.001
+  motionMagnitude: 0.001
+  doSpin: 1
+  doMotion: 1
 --- !u!114 &1982097227 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7262707841220768447, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -70001,6 +70197,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2059579105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 274443795760651885, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2073800246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3448578808225529050, guid: 8196e70d5628d824488f4ceb51cb253c, type: 3}
@@ -70103,7 +70310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1199584983532685974, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Antialiasing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1215625317371109146, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_text
@@ -70193,6 +70400,10 @@ PrefabInstance:
       propertyPath: objectiveLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1882078459}
+    - target: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_LeftHandMoveAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7419776992968278648, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_text
       value: 'CURRENT OBJECTIVE:
@@ -70231,6 +70442,10 @@ PrefabInstance:
       propertyPath: barrelArray.Array.data[6]
       value: 
       objectReference: {fileID: 1453423024}
+    - target: {fileID: 8189049614097255827, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
       value: 
