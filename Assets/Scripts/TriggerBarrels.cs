@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using SWS;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class TriggerBarrels : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class TriggerBarrels : MonoBehaviour
     public splineMove playerSpline;
     int barrelIndex;
     public GameObject movement;
+    private ActionBasedContinuousMoveProvider contMoveProvider;
     //float dropTime = 0f;
 
     public InputActionReference barrelTrigger;
@@ -24,6 +26,7 @@ public class TriggerBarrels : MonoBehaviour
         barrelIndex = 0;
         barrelTrigger.action.performed += DropBarrel;
         audSource = GetComponent<AudioSource>();
+        contMoveProvider = movement.GetComponent<ActionBasedContinuousMoveProvider>();
     }
     //void Start()
     //{
@@ -94,7 +97,7 @@ public class TriggerBarrels : MonoBehaviour
             {
                 canDropBarrel = true;
                 //playerSpline.Pause(); //ship becomes unpaused via barrel path event
-                movement.SetActive(false);
+                contMoveProvider.enabled = false;
                 audSource.PlayOneShot(readyAudio);
                 audSource.PlayOneShot(dropZoneLine);
             }

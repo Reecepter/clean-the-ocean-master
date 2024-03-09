@@ -298,6 +298,8 @@ GameObject:
   - component: {fileID: 5182739212923644230}
   - component: {fileID: 4640520331425536652}
   - component: {fileID: 3109856842794341055}
+  - component: {fileID: -6630405445279548370}
+  - component: {fileID: -108784588488955103}
   m_Layer: 0
   m_Name: ClownFish2LowPoly
   m_TagString: Untagged
@@ -358,6 +360,34 @@ MonoBehaviour:
   myManager: {fileID: 0}
   avoid: 0
   avoidDistance: 0
+--- !u!114 &-6630405445279548370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523411463923659772}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.001
+  motionMagnitude: 0.001
+  doSpin: 1
+  doMotion: 1
+--- !u!114 &-108784588488955103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523411463923659772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4273ec65937ef504998a0876557be0b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6394674380583950071
 GameObject:
   m_ObjectHideFlags: 0

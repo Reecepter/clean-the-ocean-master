@@ -56,4 +56,17 @@ public class FlockManager : MonoBehaviour {
         Gizmos.DrawWireCube(center, swimLimits);
         Gizmos.DrawCube(goalPos, flockSize);
     }
+
+    public void FishDeath()
+    {
+        minSpeed = 0;
+        maxSpeed = 0;
+        rotationSpeed = 0;
+
+        for (int i = 0; i < numFish; i++)
+        {
+            FishDeath fishDeath = allFish[i].GetComponent<FishDeath>();
+            fishDeath.BeginDeath();
+        }
+    }
 }
