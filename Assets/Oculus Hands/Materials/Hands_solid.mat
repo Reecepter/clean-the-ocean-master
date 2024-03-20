@@ -25,12 +25,10 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _GLOSSINESS_FROM_BASE_ALPHA
   - _RECEIVE_SHADOWS_OFF
-  - _SPECULAR_COLOR
   m_InvalidKeywords: []
-  m_LightmapFlags: 6
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
@@ -137,7 +135,7 @@ Material:
     - _SmoothnessSource: 1
     - _SmoothnessTextureChannel: 0
     - _SpecSource: 0
-    - _SpecularHighlights: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
@@ -145,12 +143,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.8460572, b: 0.6179246, a: 0.75}
-    - _Color: {r: 1, g: 0.8460572, b: 0.6179245, a: 0.75}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0.6886792, g: 0.5515395, b: 0.3475881, a: 1}
+    - _Color: {r: 0.6886792, g: 0.5515395, b: 0.34758806, a: 1}
+    - _EmissionColor: {r: 0.013065764, g: 0.0051951334, b: 0.0009244642, a: 1}
     - _MyColor: {r: 0.87058824, g: 0.87058824, b: 0.87058824, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectColor: {r: 1, g: 0, b: 0, a: 0.5019608}
-    - _SpecColor: {r: 0.50735295, g: 0.50735295, b: 0.50735295, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []

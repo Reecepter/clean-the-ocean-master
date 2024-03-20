@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 4600326680174775705, guid: 0e66373341b893444a51375778a3ba9b, type: 3}
-  numFish: 20
+  numFish: 10
   allFish: []
   swimLimits: {x: 28, y: 5, z: 28}
   flockSize: {x: 10, y: 10, z: 10}

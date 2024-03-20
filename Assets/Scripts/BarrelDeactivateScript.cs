@@ -17,10 +17,6 @@ public class BarrelDeactivateScript : MonoBehaviour
 
     private void OnDisable()
     {
-        //if (areaToDisable != null && areaToEnable != null) {  
-        //    areaToDisable.SetActive(false); 
-        //    areaToEnable.SetActive(true);
-        //}
         _startAnimationForArea?.Invoke();
         BarrelCount.barrelsCleared++;
     }

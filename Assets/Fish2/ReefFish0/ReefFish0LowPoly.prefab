@@ -261,6 +261,8 @@ GameObject:
   - component: {fileID: 3791032604516521763}
   - component: {fileID: 3681355609959217750}
   - component: {fileID: -3446237241894233832}
+  - component: {fileID: -4255976588884090265}
+  - component: {fileID: 7034510124856406008}
   m_Layer: 0
   m_Name: ReefFish0LowPoly
   m_TagString: Untagged
@@ -321,6 +323,34 @@ MonoBehaviour:
   myManager: {fileID: 0}
   avoid: 0
   avoidDistance: 0
+--- !u!114 &-4255976588884090265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600326680174775705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4273ec65937ef504998a0876557be0b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7034510124856406008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600326680174775705}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 0.001
+  motionMagnitude: 0.001
+  doSpin: 1
+  doMotion: 1
 --- !u!1 &5959224453303700983
 GameObject:
   m_ObjectHideFlags: 0
