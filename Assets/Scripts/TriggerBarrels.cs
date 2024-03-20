@@ -71,11 +71,11 @@ public class TriggerBarrels : MonoBehaviour
             //dropTime = 10f;
             audSource.PlayOneShot(triggerAudio);
             //playerSpline.Resume();
-            Debug.Log("Resume Player Movement");
+            //Debug.Log("Resume Player Movement");
             if (dropUI.activeSelf == true)
             {
                 dropUI.SetActive(false);
-                Debug.Log("Drop UI has be disabled");
+                //Debug.Log("Drop UI has be disabled");
             } 
         }
     }
@@ -104,7 +104,7 @@ public class TriggerBarrels : MonoBehaviour
         }
         else
         {
-            Debug.Log("No more barrels to drop");
+            //Debug.Log("No more barrels to drop");
         }
     }
 }

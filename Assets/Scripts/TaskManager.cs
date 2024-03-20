@@ -94,6 +94,7 @@ public class TaskManager : MonoBehaviour
     {
         if (audSource != null && !nextLevelAudio.Equals(null))
         {
+            if (audSource.isPlaying) { audSource.Stop(); }
             audSource.PlayOneShot(nextLevelAudio);
         }
     }

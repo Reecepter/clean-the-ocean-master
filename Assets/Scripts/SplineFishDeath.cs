@@ -78,12 +78,12 @@ public class SplineFishDeath : MonoBehaviour
         if (Physics.Raycast(transform.position, -Vector3.up, out hit, Mathf.Infinity))
         {
             Vector3 targetPosition = hit.point + Vector3.up * targetHeight;
-            Debug.Log(targetPosition);
+            //Debug.Log(targetPosition);
             return targetPosition;
         }
         else
         {
-            Debug.Log("RaycastFailed");
+            //Debug.Log("RaycastFailed");
             // If raycast fails, return the current position with targetHeight added
             return transform.position + Vector3.up * targetHeight;
         }

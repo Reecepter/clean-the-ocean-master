@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
 using DG.Tweening;
-//using UnityEditor.ShaderGraph.Internal;
 
 public class CapsuleRotation : MonoBehaviour
 {
@@ -18,9 +17,6 @@ public class CapsuleRotation : MonoBehaviour
     public float maxVerticalAngle = 60f;
     public float minVerticalAngle = -60f;
 
-    //private float currentRotation = 0;
-    //float desiredRotation = 0;
-    // Start is called before the first frame update
     void OnEnable()
     {
         rightHandTurn.action.performed += Turned;
@@ -38,46 +34,8 @@ public class CapsuleRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //thumbstickR = rightHandTurn.action.ReadValue<Vector2>();
-        //thumbstickL = leftHandTurn.action.ReadValue<Vector2>();
-        //RotationControl();
         RotateObjectOnInput();
-        
     }
-    //void RotationControl()
-    //{
-    //    if (thumbstickR.x > 0.6f || thumbstickR.x < -0.6f)
-    //    {
-    //        subBody.transform.Rotate(0, thumbstickR.x * rotationSpeed, 0);
-    //    }
-
-    //    if (thumbstickL.y > 0.6f || thumbstickL.y < -0.6f)
-    //    {
-    //        // Calculate the desired rotation based on thumbstick input
-    //        float desiredRotation = thumbstickL.y * rotationSpeed;
-
-    //        // Get the current local rotation around the X-axis
-    //        Vector3 currentRotation = subBody.transform.localRotation.eulerAngles;
-
-    //        // Define the maximum allowed rotation in either direction (adjust the value accordingly)
-    //        float maxRotation = 45f;
-
-    //        // Calculate the target rotation based on the thumbstick input
-    //        float targetRotationX = Mathf.Clamp(currentRotation.x + desiredRotation, -maxRotation, maxRotation);
-
-    //        // Set the new rotation
-    //        subBody.transform.localRotation = Quaternion.Euler(targetRotationX, currentRotation.y, currentRotation.z);
-    //    }
-    //}
-
-    //private void RotateObjectOnInput()
-    //{
-    //    thumbstickR = rightHandTurn.action.ReadValue<Vector2>();
-    //    thumbstickL = leftHandTurn.action.ReadValue<Vector2>();
-    //    float verticalRotation = Mathf.Clamp(thumbstickL.y, -90f, 180f);
-    //    Vector3 rotationAmount = new Vector3(-verticalRotation, thumbstickR.x, 0f) * rotationSpeed * Time.deltaTime;
-    //    subBody.transform.Rotate(rotationAmount, Space.Self);
-    //}
 
     private void OnDisable()
     {

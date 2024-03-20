@@ -69712,6 +69712,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: contMoveProvider
+      value: 
+      objectReference: {fileID: 1595996937}
+    - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: _CloseHandout.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 297998702}
