@@ -9,29 +9,31 @@ public class HandoutScript : MonoBehaviour
 {
     public InputActionReference closeInputActionReference;
     public UnityEvent _CloseHandout;
-    //public GameObject moveProvider;
-    public ActionBasedContinuousMoveProvider contMoveProvider;
+    public GameObject moveProvider;
+    private ActionBasedContinuousMoveProvider contMoveProvider;
     // Start is called before the first frame update
     private void Start()
     {
+        contMoveProvider = moveProvider.GetComponent<ActionBasedContinuousMoveProvider>();
         contMoveProvider.enabled = false;
     }
     void OnEnable()
     {
         closeInputActionReference.action.performed += OnClose;
-        contMoveProvider.enabled = false;
+        //contMoveProvider.enabled = false;
     }
 
     private void OnClose(InputAction.CallbackContext context)
     {
         _CloseHandout?.Invoke();
-        contMoveProvider.enabled = true;
+        //contMoveProvider.enabled = true;
         this.gameObject.SetActive(false);
     }
 
     private void OnDisable()
     {
         closeInputActionReference.action.performed -= OnClose;
+        contMoveProvider.enabled = true;
     }
 
 }

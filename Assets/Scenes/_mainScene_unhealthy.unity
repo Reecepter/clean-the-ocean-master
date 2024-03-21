@@ -47478,6 +47478,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1103172860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5294925660534466635, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1107163430
 GameObject:
   m_ObjectHideFlags: 0
@@ -59251,7 +59256,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
   m_PrefabInstance: {fileID: 2106705532}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1103172860}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
@@ -73530,6 +73535,10 @@ PrefabInstance:
       value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: moveProvider
+      value: 
+      objectReference: {fileID: 1103172860}
+    - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: contMoveProvider
       value: 
       objectReference: {fileID: 1399957846}
@@ -73750,6 +73759,10 @@ PrefabInstance:
     - target: {fileID: 8189049614097255827, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8199907048038347835, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8427159693468338091, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_AnchoredPosition.y

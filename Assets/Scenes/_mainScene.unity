@@ -52590,7 +52590,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
   m_PrefabInstance: {fileID: 2106705532}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2106705536}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
@@ -69612,6 +69612,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a0e6e4d7594bf4b44b350f4719bb9bbf, type: 2}
     - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: moveProvider
+      value: 
+      objectReference: {fileID: 2106705536}
+    - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: _CloseHandout.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 297998702}
@@ -69719,6 +69723,10 @@ PrefabInstance:
       propertyPath: barrelArray.Array.data[6]
       value: 
       objectReference: {fileID: 1453423024}
+    - target: {fileID: 8199907048038347835, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
       value: 
@@ -69780,6 +69788,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf295223b5aa594ea34a3c33fae7cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2106705536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5294925660534466635, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &2106705541 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7950687403028243406, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
