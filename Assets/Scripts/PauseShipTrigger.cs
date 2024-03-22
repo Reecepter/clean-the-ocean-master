@@ -16,9 +16,9 @@ public class PauseShipTrigger : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player") && allowShipPause == true)
         {
-            Debug.Log("Player ship paused");
+            //Debug.Log("Player ship paused");
             allowShipPause = false;
-            Debug.Log("Trigger: "+ this.gameObject.name + " can no longer pause ship");
+            //Debug.Log("Trigger: "+ this.gameObject.name + " can no longer pause ship");
             _PauseShipAllowDrop?.Invoke();
         }
     }

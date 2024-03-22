@@ -15,9 +15,9 @@ public class HandoutScript : MonoBehaviour
     private void Start()
     {
         contMoveProvider = moveProvider.GetComponent<ActionBasedContinuousMoveProvider>();
-        contMoveProvider.enabled = false;
+        contMoveProvider.moveSpeed = 0;
     }
-    void OnEnable()
+    void Awake()
     {
         closeInputActionReference.action.performed += OnClose;
         //contMoveProvider.enabled = false;
@@ -33,7 +33,7 @@ public class HandoutScript : MonoBehaviour
     private void OnDisable()
     {
         closeInputActionReference.action.performed -= OnClose;
-        contMoveProvider.enabled = true;
+        //contMoveProvider.enabled = true;
     }
 
 }

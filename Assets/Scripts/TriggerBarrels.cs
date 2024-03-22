@@ -28,10 +28,6 @@ public class TriggerBarrels : MonoBehaviour
         audSource = GetComponent<AudioSource>();
         contMoveProvider = movement.GetComponent<ActionBasedContinuousMoveProvider>();
     }
-    //void Start()
-    //{
-    //    barrelIndex = 0;
-    //}
 
     // Update is called once per frame
     void Update()
@@ -97,7 +93,7 @@ public class TriggerBarrels : MonoBehaviour
             {
                 canDropBarrel = true;
                 //playerSpline.Pause(); //ship becomes unpaused via barrel path event
-                contMoveProvider.enabled = false;
+                contMoveProvider.moveSpeed = 0;
                 audSource.PlayOneShot(readyAudio);
                 audSource.PlayOneShot(dropZoneLine);
             }
