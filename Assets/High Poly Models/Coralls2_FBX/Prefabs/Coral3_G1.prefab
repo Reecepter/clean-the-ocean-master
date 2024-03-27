@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2075298065318328115}
   - component: {fileID: 3937486938450859258}
   - component: {fileID: 4119074099065335592}
+  - component: {fileID: 8661040951376433698}
+  - component: {fileID: 6262188567249285142}
   m_Layer: 0
   m_Name: Coral3_G1
   m_TagString: Untagged
@@ -83,3 +85,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8661040951376433698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206565157813564327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthyColor: {r: 1, g: 1, b: 1, a: 1}
+  unhealthyColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+--- !u!114 &6262188567249285142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206565157813564327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthyColor: {r: 1, g: 1, b: 1, a: 1}
+  unhealthyColor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}

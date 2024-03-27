@@ -5422,7 +5422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &204636408
 Transform:
   m_ObjectHideFlags: 0
@@ -5859,54 +5859,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 694540002}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 694540001}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1272416801}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 694540000}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1254264469}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
         m_MethodName: StartUnhealthy
@@ -5971,6 +5923,18 @@ MonoBehaviour:
       - m_Target: {fileID: 252207152}
         m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
         m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 937570800}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27110,17 +27074,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cde6ba5a87074e8a973d577574f33c1, type: 3}
---- !u!114 &686690087 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5215300568233295733, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &690082562 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 436588328994065958, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -27140,10 +27093,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 113084213448730679, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 415772820224296926, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.16452
@@ -27184,350 +27133,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 479808379083697455, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479808379083697455, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 856912207099879813, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 869739879650916208, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 996824133433727358, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1296316718427007348, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1307822088264765056, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535452408566376278, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650429945127360863, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677337013236067829, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1740957131712125415, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 2287624039303999934, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
-    - target: {fileID: 2627833368856103250, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2682504526783179006, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2885539817907526477, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946100795185801906, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977159204628175960, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3382860410269449410, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3610242572352960396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 3636385068952868779, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: loopType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: closeLoop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: lockRotation
-      value: 6
-      objectReference: {fileID: 0}
+    - target: {fileID: 3619138356171111984, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+      propertyPath: pathContainer
+      value: 
+      objectReference: {fileID: 2025025324}
     - target: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
       propertyPath: pathContainer
       value: 
       objectReference: {fileID: 2025025324}
-    - target: {fileID: 3888529441846723133, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3997596947727920036, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4078000631699107695, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187304918920303893, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4199040951370928818, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375718571508072852, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453516829243331059, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4557509970016194920, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4563115169595784332, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4574542757449420183, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4619292497157232479, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5029118605768295932, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5050078566158668388, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5050723878366919650, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5054717953270560003, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5128487185039063826, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257925168829691944, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5563115976163187602, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5584557067980936101, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5763955323580726728, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5792868798981824302, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6454104773692957091, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6529619961117684429, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6642215042001662114, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6764232090731718868, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6785227568340887848, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6791599086995730740, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6843497084393602306, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7102097860742022209, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 7231478248116339488, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7326745651242933372, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 7581122038750726412, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7598459719185848100, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 7603149666218049483, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7644250718324346808, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7728110272757885268, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7733879297037651221, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 7920383001666639498, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7956552057999882319, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003039267210193967, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8245703724228534071, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8328612868667736635, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8352004850454130126, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8383670552817224444, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8449052292992414681, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8512395429650214838, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8641723842964470308, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8750498770586272467, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132858696042450324, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 9139721841794286744, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190267134185427410, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3110719640724837075, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 3901335286300703690, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 3247813850819764237, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 5549836954560430342, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 5895851499598718607, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 2364344967107834074, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-    - {fileID: 8838626519388909348, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8449052292992414681, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1203146096}
-    - targetCorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1789135307}
-    - targetCorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1789135308}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
 --- !u!114 &694539997 stripped
 MonoBehaviour:
@@ -27564,35 +27185,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &694540000 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2180685305201701136, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4407126826941182610, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &694540001 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3127935158573132089, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3083822325865458312, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &694540002 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2811298976060701934, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3567123397776840912, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &696550742
@@ -27663,303 +27284,6 @@ Transform:
   - {fileID: 381134354}
   m_Father: {fileID: 1379474961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &723031809 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3975954701128831510, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031810 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4141741892393689216, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031811 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6958676320531895477, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031812 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6450614890374499219, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031813 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 623839270006789075, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4810850999777512263, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031815 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2253918223203034458, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031816 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5820936167561589787, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031817 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2905045602718414545, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031818 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3977880635577778317, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031819 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5087880257737689893, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031820 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6193636792177089973, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031821 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 46308238220349164, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031822 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4872548217630113097, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031823 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2553395812905572067, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031824 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1620593862877010766, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031825 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4481383830752345742, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031826 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2727429855575836015, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031827 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7115048215416485472, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031828 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5394614966230526059, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031829 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6466282511153674757, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031830 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2873672289739228146, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031831 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2194600586192946494, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3306817677650852514, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031833 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1344692720710229311, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031834 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3482874792144913059, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &723031835 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3648726552496251301, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &725526175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28234,18 +27558,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 686690087}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 239452311}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
         m_MethodName: StartUnhealthy
@@ -28309,6 +27621,18 @@ MonoBehaviour:
       - m_Target: {fileID: 884386449}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
         m_MethodName: StartUnhealthy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 694540000}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33821,6 +33145,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 546765278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &850425588 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7099756463222143799, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &866327538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33998,6 +33333,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 166456a4dec140b40a3d3ca60c7e8c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &895746925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3661103169763569949, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &901015211
@@ -39042,6 +38388,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7626932942679863915, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &937570800 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5936467755963437685, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947198392
 GameObject:
   m_ObjectHideFlags: 0
@@ -39288,6 +38645,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104980972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6343324861505025108, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+  m_PrefabInstance: {fileID: 694539996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1bca15a3e30274fa3cc709d553af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1107163430
 GameObject:
   m_ObjectHideFlags: 0
@@ -49462,51 +48830,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!1 &1203146094 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8449052292992414681, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1203146096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203146094}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a2d9078dbe17bc4f966c9d2310be047, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathContainer: {fileID: 2025025324}
-  onStart: 1
-  moveToPath: 0
-  reverse: 0
-  startPoint: 0
-  currentPoint: 0
-  closeLoop: 1
-  localType: 0
-  lookAhead: 0
-  sizeToAdd: 0
-  timeValue: 1
-  speed: 2
-  animEaseType:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  loopType: 1
-  waypoints: []
-  events: []
-  pathType: 1
-  pathMode: 1
-  easeType: 1
-  lockPosition: 0
-  lockRotation: 0
-  waypointRotation: 0
-  rotationTarget: {fileID: 0}
 --- !u!114 &1216380434 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7389136977581332684, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -49814,78 +49137,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 723031829}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031828}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031827}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031826}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031825}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031824}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 297998702}
         m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
         m_MethodName: NextTask
@@ -49949,6 +49200,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1856156698}
         m_TargetAssemblyTypeName: SplineFishDeath, Assembly-CSharp
         m_MethodName: BeginDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 895746925}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50306,17 +49569,6 @@ MonoBehaviour:
   radius: 0.4
   skipCustomNames: 1
   replaceObject: {fileID: 0}
---- !u!114 &1272416801 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4110813355026412864, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8349832a6f521014b832196b0e558f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1307834006
 GameObject:
   m_ObjectHideFlags: 0
@@ -51006,78 +50258,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 723031820}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031819}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031818}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031817}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031816}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031815}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 297998702}
         m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
         m_MethodName: NextTask
@@ -51105,6 +50285,18 @@ MonoBehaviour:
       - m_Target: {fileID: 106162827}
         m_TargetAssemblyTypeName: FlockManager, Assembly-CSharp
         m_MethodName: FishDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 694540002}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51670,90 +50862,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 723031835}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031834}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031833}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031832}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031831}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031830}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031809}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1130278284}
         m_TargetAssemblyTypeName: TurnUnhealthy, Assembly-CSharp
         m_MethodName: StartUnhealthy
@@ -51805,6 +50913,18 @@ MonoBehaviour:
       - m_Target: {fileID: 252207152}
         m_TargetAssemblyTypeName: CompassArrow, Assembly-CSharp
         m_MethodName: UpdateTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 850425588}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52194,42 +51314,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 723031823}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031822}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031821}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 297998702}
         m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
         m_MethodName: NextTask
@@ -52257,6 +51341,18 @@ MonoBehaviour:
       - m_Target: {fileID: 284993163}
         m_TargetAssemblyTypeName: FlockManager, Assembly-CSharp
         m_MethodName: FishDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1104980972}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58059,51 +57155,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1269881886}
   m_LocalEulerAnglesHint: {x: 0, y: -70.435, z: 0}
---- !u!1 &1789135303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1785364974944067910, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
+--- !u!114 &1789135307 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5398981099777394233, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
   m_PrefabInstance: {fileID: 694539996}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1789135305 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3819194824878069396, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
-  m_PrefabInstance: {fileID: 694539996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789135303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a2d9078dbe17bc4f966c9d2310be047, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1789135307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789135303}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d531281b43912904f8549f9865fa053f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishSpline: {fileID: 1789135305}
---- !u!114 &1789135308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789135303}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dcbbb0e3805dd4c94d30badeb6d53a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinSpeed: 0.001
-  motionMagnitude: 0.001
-  doSpin: 1
-  doMotion: 1
 --- !u!1 &1803150302
 GameObject:
   m_ObjectHideFlags: 0
@@ -69732,6 +68794,10 @@ PrefabInstance:
       propertyPath: objectiveLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1882078459}
+    - target: {fileID: 5640641215310648916, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5797184763930941449, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -70193,66 +69259,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 723031814}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031813}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031812}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031811}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 723031810}
-        m_TargetAssemblyTypeName: CoralUnhealthy, Assembly-CSharp
-        m_MethodName: StartUnhealthy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 297998702}
         m_TargetAssemblyTypeName: TaskManager, Assembly-CSharp
         m_MethodName: NextTask
@@ -70280,6 +69286,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1965453196}
         m_TargetAssemblyTypeName: SplineFishDeath, Assembly-CSharp
         m_MethodName: BeginDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 694540001}
+        m_TargetAssemblyTypeName: ActivateCoralChange, Assembly-CSharp
+        m_MethodName: ActivateUnhealthy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
