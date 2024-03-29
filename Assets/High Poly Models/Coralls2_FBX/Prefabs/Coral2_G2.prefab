@@ -97,4 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthyColor: {r: 1, g: 1, b: 1, a: 1}
-  unhealthyColor: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
+  unhealthyColor: {r: 0.6901961, g: 0.6784314, b: 0.5176471, a: 1}

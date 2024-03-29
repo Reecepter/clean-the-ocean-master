@@ -9,6 +9,8 @@ public class FishDeath : MonoBehaviour
     private bool isDeathStarted = false; // Flag to check if death has started
     private float targetHeight = 2f; // Height above terrain to move to
     private float moveSpeed = 0.5f; // Speed of movement
+    private float lerpDuration = 6f; // Time it takes to rotate upside down
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,7 @@ public class FishDeath : MonoBehaviour
         anim.enabled = false;
 
         Vector3 targetPosition = CalculateTargetPositionAboveTerrain();
-
+        StartCoroutine(RotateAfterDeath());
         while (transform.position.y != targetPosition.y)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
@@ -38,6 +40,7 @@ public class FishDeath : MonoBehaviour
         }
 
         mover.enabled = true;
+        
     }
 
     private Vector3 CalculateTargetPositionAboveTerrain()
@@ -55,5 +58,20 @@ public class FishDeath : MonoBehaviour
             // If raycast fails, return the current position with targetHeight added
             return transform.position + Vector3.up * targetHeight;
         }
+    }
+
+    private IEnumerator RotateAfterDeath()
+    {
+        float timeElapsed = 0;
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = transform.rotation * Quaternion.Euler(0, 0, 90);
+
+        while (timeElapsed < lerpDuration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = targetRotation;
     }
 }

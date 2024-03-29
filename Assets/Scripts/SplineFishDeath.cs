@@ -5,35 +5,17 @@ using SWS;
 
 public class SplineFishDeath : MonoBehaviour
 {
-    //public splineMove fishSpline;
-    //private Animator anim;
-    //private BasicMover mover;
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-    //    anim = GetComponent<Animator>();
-    //    mover = GetComponent<BasicMover>();
-    //}
-
-    //public void BeginDeath()
-    //{
-    //    StartCoroutine(Death());
-    //}
-
-    //public IEnumerator Death()
-    //{
-    //    fishSpline.speed = 0.5f;
-    //    anim.SetBool("isDying", true);
-    //    yield return new WaitForSeconds(2f);
-    //    fishSpline.Stop();
-    //    mover.enabled = true;
-    //}
     public splineMove fishSpline;
+    public bool isRotating;
+    public bool hasAudio;
+    public AudioSource aud = null;
+
     private Animator anim;
     private BasicMover mover;
     private bool isDeathStarted = false; // Flag to check if death has started
-    private float targetHeight = 1f; // Height above terrain to move to
+    private float targetHeight = 0.5f; // Height above terrain to move to
     private float moveSpeed = 0.5f; // Speed of movement
+    private float lerpDuration = 6f;
 
     void Start()
     {
@@ -60,6 +42,10 @@ public class SplineFishDeath : MonoBehaviour
         // Stop spline movement
         fishSpline.Stop();
 
+        if (isRotating)
+        {
+            StartCoroutine(RotateAfterDeath());
+        }
         // Move towards target height above terrain
         Vector3 targetPosition = CalculateTargetPositionAboveTerrain();
         while (transform.position.y != targetPosition.y)
@@ -67,7 +53,10 @@ public class SplineFishDeath : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             yield return null;
         }
-
+        if (hasAudio && aud != null)
+        {
+            aud.Stop();
+        }
         mover.enabled = true;
     }
 
@@ -87,5 +76,20 @@ public class SplineFishDeath : MonoBehaviour
             // If raycast fails, return the current position with targetHeight added
             return transform.position + Vector3.up * targetHeight;
         }
+    }
+
+    private IEnumerator RotateAfterDeath()
+    {
+        float timeElapsed = 0;
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = transform.rotation * Quaternion.Euler(0, 0, 180);
+
+        while (timeElapsed < lerpDuration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / lerpDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = targetRotation;
     }
 }
