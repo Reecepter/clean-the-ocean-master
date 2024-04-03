@@ -5475,11 +5475,6 @@ MonoBehaviour:
   radius: 0.4
   skipCustomNames: 1
   replaceObject: {fileID: 0}
---- !u!1 &213085964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1795453302095555922, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-  m_PrefabInstance: {fileID: 2106705532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &226510014 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2743477558185734755, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -33229,6 +33224,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 546765278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &831001962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3898849144653958677, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &850425588 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7099756463222143799, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -38525,6 +38525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76efccbe7bc3f1147a1b449c6084fe1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1020491810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7857841152034126204, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1024406519 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3687083677280962884, guid: 6ffa2a5827afe4a4b8449230fab114a3, type: 3}
@@ -49269,7 +49274,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1428955244}
+      - m_Target: {fileID: 831001962}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -49718,6 +49723,11 @@ Transform:
 --- !u!224 &1316797836 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8862223660369959148, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+  m_PrefabInstance: {fileID: 2106705532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1354696634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 764196608123368060, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
   m_PrefabInstance: {fileID: 2106705532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1362822156
@@ -50970,7 +50980,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1891416859}
+      - m_Target: {fileID: 1020491810}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -50982,7 +50992,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 213085964}
+      - m_Target: {fileID: 1354696634}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -58200,11 +58210,6 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7928155386572782452, guid: 86084d30c4a9b5d4e90ee91815ae0f4a, type: 3}
   m_PrefabInstance: {fileID: 3213997373887327086}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1891416859 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8633696015774598905, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-  m_PrefabInstance: {fileID: 2106705532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1892597357 stripped
 GameObject:
@@ -68765,10 +68770,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 641193485120331365, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a0e6e4d7594bf4b44b350f4719bb9bbf, type: 2}
     - target: {fileID: 2621177126391446738, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: moveProvider
       value: 
@@ -68841,20 +68842,13 @@ PrefabInstance:
       propertyPath: objectiveLocations.Array.data[7]
       value: 
       objectReference: {fileID: 2142091704}
-    - target: {fileID: 3875129252958261492, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_text
-      value: "Head to the marked barrel drop zone. \nThe submarine will pause once
-        you reach the drop zone.\nDrop the barrel with the [A] Button.\nOnce the
-        barrel has dropped, you will be able to go to the next drop zone.\n\nPress
-        [B] To Continue"
-      objectReference: {fileID: 0}
+    - target: {fileID: 4030284329413141871, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: _CloseHandout.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 297998702}
     - target: {fileID: 4113171461107797629, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5113597867698257909, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5479161351590630504, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: objectiveLocations.Array.data[0]
@@ -68888,29 +68882,17 @@ PrefabInstance:
       propertyPath: objectiveLocations.Array.data[7]
       value: 
       objectReference: {fileID: 1882078459}
-    - target: {fileID: 5640641215310648916, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5797184763930941449, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6004354831594928226, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6273575847453930388, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 6644339044851238741, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_LeftHandMoveAction.m_UseReference
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7127643400454193218, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -372.02
+    - target: {fileID: 7278472277797106291, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7450853026631813677, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: dropZoneLine
@@ -68944,14 +68926,6 @@ PrefabInstance:
       propertyPath: barrelArray.Array.data[6]
       value: 
       objectReference: {fileID: 1453423024}
-    - target: {fileID: 8069627301351848292, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_text
-      value: Press [A] to Drop
-      objectReference: {fileID: 0}
-    - target: {fileID: 8199907048038347835, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8829389491839421051, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: pathContainer
       value: 
@@ -68970,6 +68944,10 @@ PrefabInstance:
       objectReference: {fileID: 1145200441}
     - target: {fileID: 8970782697392115354, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9029869008752642184, guid: 4b6421e213f69364d925b299ae6ef1cf, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
